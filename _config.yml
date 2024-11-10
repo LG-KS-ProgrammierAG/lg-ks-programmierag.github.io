@@ -20,5 +20,5 @@ defaults:
 
 
 
-url: "https://lg-ks-programmierag.github.io/Dokumentation"
-baseurl: ""
+url: "https://lg-ks-programmierag.github.io"
+baseurl: "/Dokumentation"
