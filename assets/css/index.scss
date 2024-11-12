@@ -20,6 +20,25 @@ header {
     h4 {color: #1f3969}
 }
 
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s, transform 0.1s;
+    margin: 3vh auto; /* Vertikaler Abstand und zentriert */
+    display: block;   /* Block-Display, um zentriert zu sein */
+}
+button:hover {
+    background-color: #0069d9;
+    transform: scale(1.03);
+}
+
 #doc-cards {
     width: 100vw;
     margin-top: 5vh;
