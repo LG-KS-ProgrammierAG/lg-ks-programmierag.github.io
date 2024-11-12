@@ -1,1 +1,16 @@
-.current { color: green; }
+@charset "UTF-8";
+/* Styling für den gesamten Body */
+body { margin: 0; padding: 0; }
+
+/* Navbar */
+.navbar { width: 20vw; /* Die Navbar ist nun 20% der Breite des Viewports */ position: fixed; /* Fixiert die Navbar links */ top: 0; left: 0; height: 100vh; /* Die Navbar nimmt die gesamte Höhe des Viewports ein */ background-color: #f4f4f4; /* Beispiel Hintergrundfarbe */ box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Leichter Schatten */ padding: 20px; overflow-y: auto; /* Wenn der Inhalt zu lang wird, erscheint ein Scrollbalken */ }
+
+/* Content */
+.content { margin-left: 20vw; /* Content wird um 20vw nach rechts verschoben */ padding: 20px; /* Padding für den Content */ background-color: #fff; /* Hintergrundfarbe für den Content */ }
+
+/* Styling für Links in der Navbar */
+.navbar a { display: block; padding: 10px; text-decoration: none; color: #333; }
+
+.navbar a:hover { background-color: #ddd; /* Hover-Effekt für die Links */ }
+
+.current { font-weight: bold; /* Hervorheben der aktuellen Seite */ }

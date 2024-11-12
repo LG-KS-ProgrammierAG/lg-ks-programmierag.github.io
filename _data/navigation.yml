@@ -1,8 +1,43 @@
 - name: Home
   link: /
+  segment: Main
+
 - name: About
   link: /about.html
+  segment: Main
+
 - name: Blog
   link: /blog.html
+  segment: Main
+
 - name: Staff
   link: /staff.html
+  segment: Main
+
+- name: Guides
+  segment: Documentation
+  subpages:
+    - name: Introduction
+      link: /documentation/introduction.html
+    - name: Setup
+      link: /documentation/setup.html
+    - name: Usage
+      link: /documentation/usage.html
+    - name: FAQ
+      link: /documentation/faq.html
+
+- name: API Reference
+  link: /api-reference.html
+  segment: Documentation
+
+- name: Contact
+  link: /contact.html
+  segment: Support
+
+- name: Help
+  segment: Support
+  subpages:
+    - name: FAQ
+      link: /support/faq.html
+    - name: Troubleshooting
+      link: /support/troubleshooting.html

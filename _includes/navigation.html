@@ -1,7 +1,32 @@
+<h4>Doc-Title</h4>
 <nav>
-    {% for item in site.data.navigation %}
-        <a href="{{ item.link }}" {% if page.url == item.link %} class="current" {% endif %}>
-            {{ item.name }}
-        </a>
-    {% endfor %}
+  {% assign previous_segment = "" %}
+  {% for item in site.data.navigation %}
+    {% if item.segment != previous_segment %}
+      {% if previous_segment != "" %}
+        </ul> <!-- Close previous segment list -->
+      {% endif %}
+      <h5>{{ item.segment }}</h5> <!-- Display segment title -->
+      <ul> <!-- Start new list for segment -->
+      {% assign previous_segment = item.segment %}
+    {% endif %}
+    
+    <li>
+      <a href="{{ item.link }}" {% if page.url == item.link %} class="current" {% endif %}>
+        {{ item.name }}
+      </a>
+      {% if item.subpages %}
+        <ul>
+          {% for subpage in item.subpages %}
+            <li>
+              <a href="{{ subpage.link }}" {% if page.url == subpage.link %} class="current" {% endif %}>
+                {{ subpage.name }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul> <!-- Close final list -->
 </nav>
