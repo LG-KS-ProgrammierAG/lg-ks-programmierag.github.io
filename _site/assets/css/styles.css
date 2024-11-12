@@ -1,16 +1,82 @@
-@charset "UTF-8";
-/* Styling für den gesamten Body */
-body { margin: 0; padding: 0; }
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=M+PLUS+Rounded+1c:wght@900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
+h4 { font-family: "Quicksand", sans-serif; font-optical-sizing: auto; font-weight: 300; font-style: normal; font-size: 3vh; letter-spacing: 1vw; }
 
-/* Navbar */
-.navbar { width: 20vw; /* Die Navbar ist nun 20% der Breite des Viewports */ position: fixed; /* Fixiert die Navbar links */ top: 0; left: 0; height: 100vh; /* Die Navbar nimmt die gesamte Höhe des Viewports ein */ background-color: #f4f4f4; /* Beispiel Hintergrundfarbe */ box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Leichter Schatten */ padding: 20px; overflow-y: auto; /* Wenn der Inhalt zu lang wird, erscheint ein Scrollbalken */ }
+.poppins-thin { font-family: "Poppins", sans-serif; font-weight: 100; font-style: normal; }
 
-/* Content */
-.content { margin-left: 20vw; /* Content wird um 20vw nach rechts verschoben */ padding: 20px; /* Padding für den Content */ background-color: #fff; /* Hintergrundfarbe für den Content */ }
+.poppins-extralight { font-family: "Poppins", sans-serif; font-weight: 200; font-style: normal; }
 
-/* Styling für Links in der Navbar */
-.navbar a { display: block; padding: 10px; text-decoration: none; color: #333; }
+.poppins-light { font-family: "Poppins", sans-serif; font-weight: 300; font-style: normal; }
 
-.navbar a:hover { background-color: #ddd; /* Hover-Effekt für die Links */ }
+.poppins-regular { font-family: "Poppins", sans-serif; font-weight: 400; font-style: normal; }
 
-.current { font-weight: bold; /* Hervorheben der aktuellen Seite */ }
+.poppins-medium { font-family: "Poppins", sans-serif; font-weight: 500; font-style: normal; }
+
+.poppins-semibold { font-family: "Poppins", sans-serif; font-weight: 600; font-style: normal; }
+
+.poppins-bold { font-family: "Poppins", sans-serif; font-weight: 700; font-style: normal; }
+
+.poppins-extrabold { font-family: "Poppins", sans-serif; font-weight: 800; font-style: normal; }
+
+.poppins-black { font-family: "Poppins", sans-serif; font-weight: 900; font-style: normal; }
+
+.poppins-thin-italic { font-family: "Poppins", sans-serif; font-weight: 100; font-style: italic; }
+
+.poppins-extralight-italic { font-family: "Poppins", sans-serif; font-weight: 200; font-style: italic; }
+
+.poppins-light-italic { font-family: "Poppins", sans-serif; font-weight: 300; font-style: italic; }
+
+.poppins-regular-italic { font-family: "Poppins", sans-serif; font-weight: 400; font-style: italic; }
+
+.poppins-medium-italic { font-family: "Poppins", sans-serif; font-weight: 500; font-style: italic; }
+
+.poppins-semibold-italic { font-family: "Poppins", sans-serif; font-weight: 600; font-style: italic; }
+
+.poppins-bold-italic { font-family: "Poppins", sans-serif; font-weight: 700; font-style: italic; }
+
+.poppins-extrabold-italic { font-family: "Poppins", sans-serif; font-weight: 800; font-style: italic; }
+
+.poppins-black-italic { font-family: "Poppins", sans-serif; font-weight: 900; font-style: italic; }
+
+.quicksand-light { font-family: "Quicksand", serif; font-optical-sizing: auto; font-weight: 300; font-style: normal; }
+
+.quicksand-regular { font-family: "Quicksand", serif; font-optical-sizing: auto; font-weight: 400; font-style: normal; }
+
+.quicksand-medium { font-family: "Quicksand", serif; font-optical-sizing: auto; font-weight: 500; font-style: normal; }
+
+.quicksand-semibold { font-family: "Quicksand", serif; font-optical-sizing: auto; font-weight: 600; font-style: normal; }
+
+.quicksand-bold { font-family: "Quicksand", serif; font-optical-sizing: auto; font-weight: 700; font-style: normal; }
+
+.m-plus-rounded-1c-black { font-family: "M PLUS Rounded 1c", serif; font-weight: 900; font-style: normal; }
+
+.ibm-plex-mono-thin { font-family: "IBM Plex Mono", serif; font-weight: 100; font-style: normal; }
+
+.ibm-plex-mono-extralight { font-family: "IBM Plex Mono", serif; font-weight: 200; font-style: normal; }
+
+.ibm-plex-mono-light { font-family: "IBM Plex Mono", serif; font-weight: 300; font-style: normal; }
+
+.ibm-plex-mono-regular { font-family: "IBM Plex Mono", serif; font-weight: 400; font-style: normal; }
+
+.ibm-plex-mono-medium { font-family: "IBM Plex Mono", serif; font-weight: 500; font-style: normal; }
+
+.ibm-plex-mono-semibold { font-family: "IBM Plex Mono", serif; font-weight: 600; font-style: normal; }
+
+.ibm-plex-mono-bold { font-family: "IBM Plex Mono", serif; font-weight: 700; font-style: normal; }
+
+.ibm-plex-mono-thin-italic { font-family: "IBM Plex Mono", serif; font-weight: 100; font-style: italic; }
+
+.ibm-plex-mono-extralight-italic { font-family: "IBM Plex Mono", serif; font-weight: 200; font-style: italic; }
+
+.ibm-plex-mono-light-italic { font-family: "IBM Plex Mono", serif; font-weight: 300; font-style: italic; }
+
+.ibm-plex-mono-regular-italic { font-family: "IBM Plex Mono", serif; font-weight: 400; font-style: italic; }
+
+.ibm-plex-mono-medium-italic { font-family: "IBM Plex Mono", serif; font-weight: 500; font-style: italic; }
+
+.ibm-plex-mono-semibold-italic { font-family: "IBM Plex Mono", serif; font-weight: 600; font-style: italic; }
+
+.ibm-plex-mono-bold-italic { font-family: "IBM Plex Mono", serif; font-weight: 700; font-style: italic; }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { background: #eaecef; }
