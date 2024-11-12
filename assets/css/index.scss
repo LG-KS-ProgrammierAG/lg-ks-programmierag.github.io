@@ -23,6 +23,7 @@ header {
 #doc-cards {
     width: 100vw;
     margin-top: 5vh;
+    margin-bottom: 15vh;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(7, auto);
