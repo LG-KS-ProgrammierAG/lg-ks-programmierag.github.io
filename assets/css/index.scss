@@ -60,9 +60,8 @@ button:hover {
     align-items: center;
     
     .doc-card {
-        width: 10vw;
-        //min-width: 10vw;
-        //max-width: fit-content;
+        min-width: 10vw;
+        width: fit-content;
         height: 10vw;
         transition: all 0.2s ease-in-out;
         border-radius: 1vw;
@@ -73,10 +72,17 @@ button:hover {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-
+        
         a {
-            width: 100%;
-            height: 100%;
+            height: 10vw;          /* Feste Höhe von 10vw */
+            min-width: 10vw;       /* Mindestbreite von 10vw */
+            width: fit-content;    /* Breite passt sich dem Inhalt an */
+            padding: 0 10px;       /* Leichtes Padding links und rechts */
+            display: flex;         /* Flexbox für zentriertes Layout im Link */
+            align-items: center;   /* Zentrierung des Texts vertikal */
+            justify-content: center; /* Zentrierung des Texts horizontal */
+            text-decoration: none; /* Entfernt die Unterstreichung des Links */
+            text-align: center;    /* Zentriert den Text */
         }
     }
     .doc-card:hover {
