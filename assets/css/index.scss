@@ -68,12 +68,15 @@ button:hover {
         border-radius: 1vw;
         box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
         overflow: hidden;
-    
-        img {
+
+        background-image: url(assets/images/0_index-page/card-mac.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        a {
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            object-position: center;
         }
     }
     .doc-card:hover {
@@ -86,14 +89,14 @@ button:hover {
         margin-top: 3vh;
     }
 
-    #card-mac {grid-area: 🍎}
+    #card-mac {grid-area: 🍎; background-image: url(assets/images/0_index-page/card-mac.png);}
     #p-subhead {grid-area: P}
-    #card-scratch {grid-area: 🐱}
+    #card-scratch {grid-area: 🐱; background-image: url(assets/images/0_index-page/card-scratch.png);}
     #w-subhead {grid-area: W}
-    #card-html {grid-area: 📄}
-    #card-python {grid-area: 🐍}
+    #card-html {grid-area: 📄; background-image: url(assets/images/0_index-page/card-html.png);}
+    #card-python {grid-area: 🐍; background-image: url(assets/images/0_index-page/card-python.png);}
     #g-subhead {grid-area: G}
-    #card-godot {grid-area: 🤖}
+    #card-godot {grid-area: 🤖; background-image: url(assets/images/0_index-page/card-godot.png);}
     #a-subhead {grid-area: A}
-    #card-java {grid-area: 🍵}
+    #card-java {grid-area: 🍵; background-image: url(assets/images/0_index-page/card-java.png);}
 }
