@@ -60,7 +60,6 @@ button:hover {
     align-items: center;
     
     .doc-card {
-        min-width: 10vw;
         width: fit-content;
         height: 10vw;
         transition: all 0.2s ease-in-out;
@@ -91,9 +90,14 @@ button:hover {
         }
     }
     .doc-card:hover {
-        width: 10.3vw;
+        width: fit-content;
         height: 10.3vw;
-        
+
+        a {
+            min-width: 10.3vw;
+            width: calc(fit-content + 0.3vw)
+            height: 10.3vw;
+        }
     }
     h4 {
         letter-spacing: 0.5vw;
