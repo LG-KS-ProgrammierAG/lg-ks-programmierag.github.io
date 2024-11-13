@@ -83,6 +83,11 @@ button:hover {
             justify-content: center; /* Zentrierung des Texts horizontal */
             text-decoration: none; /* Entfernt die Unterstreichung des Links */
             text-align: center;    /* Zentriert den Text */
+
+            font-family: "Quicksand", sans-serif;
+            font-weight: 500;
+            font-size: 3vh;
+            color: #fff;
         }
     }
     .doc-card:hover {
