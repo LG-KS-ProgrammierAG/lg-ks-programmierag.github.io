@@ -64,7 +64,8 @@ button:hover {
         height: 10vw;
         transition: all 0.2s ease-in-out;
         border-radius: 1vw;
-        box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        //box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
         overflow: hidden;
 
         background-image: url(assets/images/0_index-page/card-mac.png);
