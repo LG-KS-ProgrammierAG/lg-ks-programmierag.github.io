@@ -9,11 +9,15 @@
             {% if item.group %}
                 <h2 class="group-title">{{ item.group }}</h2>
                 {% for group_item in item.pages %}
-                    <a href="{{ group_item.url }}" class="nav-link">{{ group_item.title }}</a>
+                    <a href="{{ group_item.url }}" class="nav-link">
+                        {{ group_item.title }}
+                    </a>
                     {% if group_item.subpages %}
                         <div class="subpages">
                             {% for subitem in group_item.subpages %}
-                                <a href="{{ subitem.url }}" class="nav-link subpage">{{ subitem.title }}</a>
+                                <a href="{{ subitem.url }}" class="nav-link subpage">
+                                    {{ subitem.title }}
+                                </a>
                             {% endfor %}
                         </div>
                     {% endif %}
@@ -21,11 +25,17 @@
             
             <!-- display ungrouped page -->
             {% else %}
-                <a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
-                {% if group_item.subpages %}
+                <a href="{{ item.url }}" class="nav-link">
+                    {{ item.title }}
+                    <!-- Zum Testen: -->
+                    (Aktuelle Seite: {{ page.url }}, Link-Ziel: {{ item.url }})
+                </a>
+                {% if item.subpages %}
                     <div class="subpages">
-                        {% for subitem in group_item.subpages %}
-                            <a href="{{ subitem.url }}" class="nav-link subpage">{{ subitem.title }}</a>
+                        {% for subitem in item.subpages %}
+                            <a href="{{ subitem.url }}" class="nav-link subpage">
+                                {{ subitem.title }}
+                            </a>
                         {% endfor %}
                     </div>
                 {% endif %}

@@ -1,8 +1,8 @@
 collections:
   java:
     output: true
-    permalink: /java/:path/
-    source: _docs/java
+    #order:
+    #  - einführung.md
 
 defaults:
   - scope:
