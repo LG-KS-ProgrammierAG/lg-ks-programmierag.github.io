@@ -77,7 +77,7 @@ button:hover {
             height: 10vw;          /* Feste Höhe von 10vw */
             min-width: 10vw;       /* Mindestbreite von 10vw */
             width: fit-content;    /* Breite passt sich dem Inhalt an */
-            padding: 0 10px;       /* Leichtes Padding links und rechts */
+            padding: 0 1vw;       /* Leichtes Padding links und rechts */
             display: flex;         /* Flexbox für zentriertes Layout im Link */
             align-items: center;   /* Zentrierung des Texts vertikal */
             justify-content: center; /* Zentrierung des Texts horizontal */
@@ -85,9 +85,14 @@ button:hover {
             text-align: center;    /* Zentriert den Text */
 
             font-family: "Quicksand", sans-serif;
-            font-weight: 500;
-            font-size: 3vh;
-            color: #fff;
+            font-weight: 900;
+            font-size: 5vh;
+            color: white;
+            text-shadow: 
+                1px 1px 0 black, 
+                -1px 1px 0 black, 
+                1px -1px 0 black, 
+                -1px -1px 0 black;
         }
     }
     .doc-card:hover {

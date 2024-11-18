@@ -1,0 +1,40 @@
+- title: "Einleitung"
+  url: "/java/einleitung"
+
+- title: "Programmierumgebung"
+  url: "/java/programmierumgebung"
+
+- group: "Java-Grundlagen"
+  pages:
+    - title: "Eine Java Datei"
+      url: "/java/java-grundlagen/eine-java-datei"
+    - title: "Variablen"
+      url: "/java/java-grundlagen/variablen"
+    - title: "if-else"
+      url: "/java/java-grundlagen/if-else"
+    - title: "Methoden"
+      url: "/java/java-grundlagen/methoden"
+    - title: "Schleifen"
+      url: "/java/java-grundlagen/schleifen"
+      subpages:
+        - title: "while-Schleife"
+          url: "/java/java-grundlagen/schleifen/while-schleife"
+        - title: "for-Schleife"
+          url: "/java/java-grundlagen/schleifen/for-schleife"
+    - title: "Dein erstes kleines Spiel"
+      url: "/java/java-grundlagen/erstes-spiel"
+      subpages:
+        - title: "Zufallsgenerator"
+          url: "/java/java-grundlagen/erstes-spiel/zufallsgenerator"
+
+- group: "Erweiterte Funktionen von Java"
+  pages:
+    - title: "Klassen"
+      url: "/java/erweiterte-funktionen/klassen"
+
+- group: "Einfaches Spiel mit Grafik"
+  pages:
+    - title: "Einführung in J-Frame"
+      url: "/java/einfaches-spiel/j-frame-einfuehrung"
+    - title: "Einfaches Pong Spiel mit J-Frame"
+      url: "/java/einfaches-spiel/pong-spiel"

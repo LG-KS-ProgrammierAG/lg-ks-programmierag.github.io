@@ -1,6 +1,8 @@
 collections:
-  authors:
+  java:
     output: true
+    permalink: /java/:path/
+    source: _docs/java
 
 defaults:
   - scope:
