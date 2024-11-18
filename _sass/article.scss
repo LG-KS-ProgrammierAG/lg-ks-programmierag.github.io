@@ -1,0 +1,29 @@
+.article-content {
+    // positioning
+    position: absolute;
+    top: 0;
+    left: 25vw;
+    width: calc(100vw - 25vw);
+    height: 100vh;
+    overflow-y: scroll;
+
+    // displaying of content
+    padding: 0 5vw;
+    display: flex;
+    flex-direction: column;
+
+    // fonts
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vh;
+
+    h1 {
+        font-family: "Quicksand", san-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 5vh;
+        margin-top: 5vh;
+        margin-bottom: 2vh;
+    }
+}

@@ -3,6 +3,7 @@
 //@import "main";
 @import "fonts";
 @import "navbar";
+@import "article";
 
 * {
     margin: 0;
@@ -13,18 +14,4 @@
 body {
     position: relative;
     background: #eaecef;
-}
-
-.article-content {
-    // positioning
-    position: absolute;
-    top: 0;
-    left: 250px;
-    width: calc(100vw - 250px);
-    height: 100vh;
-    overflow-y: scroll;
-
-    // displaying of content
-    display: flex;
-    flex-direction: column;
 }
