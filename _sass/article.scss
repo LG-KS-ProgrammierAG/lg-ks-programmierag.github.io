@@ -37,6 +37,16 @@
         margin-top: 3vh;
     }
 
+    //
+    //  codehighlighting
+    //
+    code {
+        background-color: #f4f4f4; /* Heller Hintergrund */
+        color: #d63384; /* Textfarbe */
+        padding: 2px 4px; /* Innenabstand */
+        border-radius: 4px; /* Abgerundete Ecken */
+    }
+
 
 
     //
@@ -67,16 +77,5 @@
         background-color: #ff5353;
         border: solid 1px #ef4646;
         background-image: url(../images/widget_icons/warning.svg);
-    }
-
-
-
-    //
-    //highlight
-    //
-    .highlight {
-        background-color: yellow;
-        padding: 0.2em;
-        border-radius: 0.2em;
     }
 }
