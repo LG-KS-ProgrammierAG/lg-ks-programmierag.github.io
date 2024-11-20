@@ -9,16 +9,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    position: relative;
-    background: #eaecef;
-}
-
-/* Light mode */
-:root {
-    --body-bg: #FFFFFF;
-    --body-color: #000000;
+@media (prefers-color-scheme: light) {
+    body {
+        position: relative;
+        background: #eaecef;
+    }
 }
 
 /* Dark mode */
@@ -28,6 +23,7 @@ body {
         --body-color: #FFFFFF;
     }
     body {
+        position: relative;
         --background-color: #000000;
     }
 }
