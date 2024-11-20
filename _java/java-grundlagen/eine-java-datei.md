@@ -3,9 +3,9 @@ title: "Eine Java Datei"
 layout: article
 ---
 
-Wenn du dein erstes Programm erstellst, wird das Programm erst einmal wie das Folgende oder ähnlich aussehen:
+Wenn du dein erstes ´Programm´ erstellst, wird das Programm erst einmal wie das Folgende oder ähnlich aussehen:
 
-'''java
+´´´java
 public class Main {
     public static void main(String[] args) {
         
@@ -13,7 +13,7 @@ public class Main {
         
     }
 }
-'''
+´´´
 
 Auch wenn der Code auf den ersten Blick überwältigend wirkt, ist es eigentlich gar nicht so kompliziert.
 
