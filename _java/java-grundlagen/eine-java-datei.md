@@ -3,17 +3,17 @@ title: "Eine Java Datei"
 layout: article
 ---
 
-Wenn du dein erstes ´Programm´ erstellst, wird das Programm erst einmal wie das Folgende oder ähnlich aussehen:
+Wenn du dein erstes Programm erstellst, wird das Programm erst einmal wie das Folgende oder ähnlich aussehen:
 
-´´´java
+```java
 public class Main {
     public static void main(String[] args) {
         
-        System.out.println(“Hallo Welt”);
+        System.out.println("Hallo Welt");
         
     }
 }
-´´´
+```
 
 Auch wenn der Code auf den ersten Blick überwältigend wirkt, ist es eigentlich gar nicht so kompliziert.
 
@@ -25,4 +25,4 @@ Die zweite Zeile teilt dem Computer mit, dass das, was in den nächsten geschwei
 
 {: .widget .info }
 Geschweifte Klammern setzt man auf dem Mac mit
-'alt+8' für *{* und 'alt+9' für *}*
+`alt+8` für *{* und `alt+9` für *}*
