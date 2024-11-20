@@ -18,12 +18,65 @@
     font-style: normal;
     font-size: 2vh;
 
-    h1 {
+    h1,h2,h3 {
         font-family: "Quicksand", san-serif;
         font-weight: 700;
         font-style: normal;
-        font-size: 5vh;
-        margin-top: 5vh;
         margin-bottom: 2vh;
+    }
+    h1 {
+        font-size: 5vh;
+        margin-top: 7vh;
+    }
+    h2 {
+        font-size: 4vh;
+        margin-top: 5vh;
+    }
+    h3 {
+        font-size: 3vh;
+        margin-top: 3vh;
+    }
+
+
+
+    //
+    //  WIDGETS
+    //
+    .widget {
+        border-radius: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        padding: 3vh 1.5vw 3vh 4vw;
+        margin: 1vh 0;
+
+        // background
+        background-position: 0.75vw center;
+        background-size: 2.5vw auto; // width, height
+        background-repeat: no-repeat;
+    }
+    .widget.info {
+        background-color: #a3cde6;
+        border: solid 1px #8bbbd7;
+        background-image: url(../images/widget_icons/info.svg);
+    }
+    .widget.important {
+        background-color: #ffee56;
+        border: solid 1px #eada43;
+        background-image: url(../images/widget_icons/important.svg);
+    }
+    .widget.warning {
+        background-color: #ff5353;
+        border: solid 1px #ef4646;
+        background-image: url(../images/widget_icons/warning.svg);
+    }
+
+
+
+    //
+    //highlight
+    //
+    .highlight {
+        background-color: yellow;
+        padding: 0.2em;
+        border-radius: 0.2em;
     }
 }

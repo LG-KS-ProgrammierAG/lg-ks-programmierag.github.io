@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=M+PLUS+Rounded+1c:wght@900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
-h4 { font-family: "Quicksand", sans-serif; font-optical-sizing: auto; font-weight: 300; font-style: normal; font-size: 3vh; letter-spacing: 1vw; }
+h4 { font-family: "Quicksand", sans-serif; font-optical-sizing: auto; font-weight: 300; font-style: normal; font-size: 3vh; padding-left: 1vw; letter-spacing: 1vw; cursor: default; }
 
 .poppins-thin { font-family: "Poppins", sans-serif; font-weight: 100; font-style: normal; }
 
@@ -85,7 +85,15 @@ h4 { font-family: "Quicksand", sans-serif; font-optical-sizing: auto; font-weigh
 .sidebar .subpage.nav-link { padding-left: 4vw; }
 
 .article-content { position: absolute; top: 0; left: 25vw; width: calc(100vw - 25vw); height: 100vh; overflow-y: scroll; padding: 0 5vw; display: flex; flex-direction: column; font-family: "Poppins", sans-serif; font-weight: 400; font-style: normal; font-size: 2vh; }
-.article-content h1 { font-family: "Quicksand", san-serif; font-weight: 700; font-style: normal; font-size: 5vh; margin-top: 5vh; margin-bottom: 2vh; }
+.article-content h1, .article-content h2, .article-content h3 { font-family: "Quicksand", san-serif; font-weight: 700; font-style: normal; margin-bottom: 2vh; }
+.article-content h1 { font-size: 5vh; margin-top: 7vh; }
+.article-content h2 { font-size: 4vh; margin-top: 5vh; }
+.article-content h3 { font-size: 3vh; margin-top: 3vh; }
+.article-content .widget { border-radius: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); padding: 3vh 1.5vw 3vh 4vw; margin: 1vh 0; background-position: 0.75vw center; background-size: 2.5vw auto; background-repeat: no-repeat; }
+.article-content .widget.info { background-color: #a3cde6; border: solid 1px #8bbbd7; background-image: url(../images/widget_icons/info.svg); }
+.article-content .widget.important { background-color: #ffee56; border: solid 1px #eada43; background-image: url(../images/widget_icons/important.svg); }
+.article-content .widget.warning { background-color: #ff5353; border: solid 1px #ef4646; background-image: url(../images/widget_icons/warning.svg); }
+.article-content .highlight { background-color: yellow; padding: 0.2em; border-radius: 0.2em; }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
