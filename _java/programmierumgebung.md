@@ -3,7 +3,7 @@ title: "Programmierumgebung"
 ---
 
 Um Java Programme schreiben zu können brauchen wir einen Editor und zum Ausführen einen Compiler. Das Programm **Intellij IDEA** kombiniert diese Funktionen. Deshalb benutzen wir dieses Program um mit Java zu programmieren.
-
+<br>
 {: .widget .info }
 Ihr müsst die folgenen Schritte nicht machen, wenn ihr die Schul PCs benutzt, da dort IntelliJ schon installiert ist
 
