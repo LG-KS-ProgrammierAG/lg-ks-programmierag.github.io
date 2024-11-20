@@ -41,10 +41,9 @@
     //  codehighlighting
     //
     code {
-        background-color: #f4f4f4; /* Heller Hintergrund */
-        color: #d63384; /* Textfarbe */
-        padding: 2px 4px; /* Innenabstand */
-        border-radius: 4px; /* Abgerundete Ecken */
+        background-color: rgba($color: #808080, $alpha: 0.5);
+        padding: 2px 4px;
+        border-radius: 4px;
     }
 
 
