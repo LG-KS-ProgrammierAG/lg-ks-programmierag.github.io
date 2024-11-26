@@ -7,7 +7,13 @@
 // normal variables:
 :root {
     --background-color: #eaecef;
+    --background-color-secondary: #f4f6f8;
+    --background-color-accent: #e0e0e0;
     --text-color: black;
+    --text-color-secondary: #333;
+    --text-color-triary: #555;
+    --accent-primary: #a3cde6;
+    --accent-secondary: #d0e9f8;
 }
 
 //
@@ -17,7 +23,13 @@
     // darkmode variables:
     :root {
         --background-color: black;
+        --background-color-secondary: #141414;
+        --background-color-accent: #2a2a2a;
         --text-color: white;
+        --text-color-secondary: #ddd;
+        --text-color-triary: #aaa;
+        --accent-primary: #395465;
+        --accent-secondary: #293e4b;
     }
 }
 

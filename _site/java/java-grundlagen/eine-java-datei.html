@@ -11,11 +11,12 @@
 
 <div class="sidebar">
     
+    <img src="/assets/images/doc-logos/java.png">
         
 
             <!-- display group -->
             
-                <a href="{{ baseurl }}/java/einleitung.html" class="nav-link">
+                <a href="/java/einleitung.html" class="nav-link">
                     Einleitung
                 </a>
                 
@@ -25,7 +26,7 @@
 
             <!-- display group -->
             
-                <a href="{{ baseurl }}/java/programmierumgebung.html" class="nav-link">
+                <a href="/java/programmierumgebung.html" class="nav-link">
                     Programmierumgebung
                 </a>
                 
@@ -37,50 +38,50 @@
             
                 <h2 class="group-title">Java-Grundlagen</h2>
                 
-                    <a href="{{ baseurl }}/java/java-grundlagen/eine-java-datei.html" class="nav-link">
+                    <a href="/java/java-grundlagen/eine-java-datei.html" class="nav-link">
                         Eine Java Datei
                     </a>
                     
                 
-                    <a href="{{ baseurl }}/java/java-grundlagen/variablen.html" class="nav-link">
+                    <a href="/java/java-grundlagen/variablen.html" class="nav-link">
                         Variablen
                     </a>
                     
                 
-                    <a href="{{ baseurl }}/java/java-grundlagen/if-else.html" class="nav-link">
+                    <a href="/java/java-grundlagen/if-else.html" class="nav-link">
                         if-else
                     </a>
                     
                 
-                    <a href="{{ baseurl }}/java/java-grundlagen/methoden.html" class="nav-link">
+                    <a href="/java/java-grundlagen/methoden.html" class="nav-link">
                         Methoden
                     </a>
                     
                 
-                    <a href="{{ baseurl }}/java/java-grundlagen/schleifen.html" class="nav-link">
+                    <a href="/java/java-grundlagen/schleifen.html" class="nav-link">
                         Schleifen
                     </a>
                     
                         <div class="subpages">
                             
-                                <a href="{{ baseurl }}/java/java-grundlagen/schleifen/while-schleife.html" class="nav-link subpage">
+                                <a href="/java/java-grundlagen/schleifen/while-schleife.html" class="nav-link subpage">
                                     while-Schleife
                                 </a>
                             
-                                <a href="{{ baseurl }}/java/java-grundlagen/schleifen/for-schleife.html" class="nav-link subpage">
+                                <a href="/java/java-grundlagen/schleifen/for-schleife.html" class="nav-link subpage">
                                     for-Schleife
                                 </a>
                             
                         </div>
                     
                 
-                    <a href="{{ baseurl }}/java/java-grundlagen/erstes-spiel.html" class="nav-link">
+                    <a href="/java/java-grundlagen/erstes-spiel.html" class="nav-link">
                         Dein erstes kleines Spiel
                     </a>
                     
                         <div class="subpages">
                             
-                                <a href="{{ baseurl }}/java/java-grundlagen/erstes-spiel/zufallsgenerator.html" class="nav-link subpage">
+                                <a href="/java/java-grundlagen/erstes-spiel/zufallsgenerator.html" class="nav-link subpage">
                                     Zufallsgenerator
                                 </a>
                             
@@ -97,7 +98,7 @@
             
                 <h2 class="group-title">Erweiterte Funktionen von Java</h2>
                 
-                    <a href="{{ baseurl }}/java/erweiterte-funktionen/klassen.html" class="nav-link">
+                    <a href="/java/erweiterte-funktionen/klassen.html" class="nav-link">
                         Klassen
                     </a>
                     
@@ -112,12 +113,12 @@
             
                 <h2 class="group-title">Einfaches Spiel mit Grafik</h2>
                 
-                    <a href="{{ baseurl }}/java/einfaches-spiel/j-frame-einfuehrung.html" class="nav-link">
+                    <a href="/java/einfaches-spiel/j-frame-einfuehrung.html" class="nav-link">
                         Einführung in J-Frame
                     </a>
                     
                 
-                    <a href="{{ baseurl }}/java/einfaches-spiel/pong-spiel.html" class="nav-link">
+                    <a href="/java/einfaches-spiel/pong-spiel.html" class="nav-link">
                         Einfaches Pong Spiel mit J-Frame
                     </a>
                     
@@ -150,17 +151,18 @@
 </div>
 
 -->
+
     <div class="article-content">
       <h1>Eine Java Datei</h1>
       <p>Wenn du dein erstes Programm erstellst, wird das Programm erst einmal wie das Folgende oder ähnlich aussehen:</p>
 
-<p>’'’java
-public class Main {
-    public static void main(String[] args) {</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    System.out.println(“Hallo Welt”);
-    
-} } '''
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hallo Welt"</span><span class="o">);</span>
+        
+    <span class="o">}</span>
+<span class="o">}</span>
 </code></pre></div></div>
 
 <p>Auch wenn der Code auf den ersten Blick überwältigend wirkt, ist es eigentlich gar nicht so kompliziert.</p>
@@ -172,7 +174,7 @@ public class Main {
 <p>Die zweite Zeile teilt dem Computer mit, dass das, was in den nächsten geschweiften Klammern steht ausgeführt werden soll, sobald das Programm gestartet wird.</p>
 
 <p class="widget info">Geschweifte Klammern setzt man auf dem Mac mit
-‘alt+8’ für <em>{</em> und ‘alt+9’ für <em>}</em></p>
+<code class="language-plaintext highlighter-rouge">alt+8</code> für <em>{</em> und <code class="language-plaintext highlighter-rouge">alt+9</code> für <em>}</em></p>
 
     </div>
   </body>
