@@ -8,10 +8,9 @@ button { background-color: #007bff; color: white; padding: 12px 24px; font-size:
 button:hover { background-color: #0069d9; transform: scale(1.03); }
 
 #doc-cards { width: 100vw; margin-top: 5vh; margin-bottom: 15vh; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(7, auto); grid-template-areas: "🍎 🍎 🍎" ".  P  P " ".  🐱 🐱" "W  .  . " "📄 🐍 🐍" ".  G  A " ".  🤖 🍵"; gap: 1vw; justify-items: center; align-items: center; }
-#doc-cards .doc-card { width: fit-content; height: 10vw; transition: all 0.2s ease-in-out; border-radius: 1vw; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); overflow: hidden; background-image: url(assets/images/0_index-page/card-mac.png); background-size: cover; background-position: center; background-repeat: no-repeat; }
+#doc-cards .doc-card { position: relative; width: fit-content; height: 10vw; transition: all 0.2s ease-in-out; border-radius: 1vw; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); overflow: hidden; background-image: url(assets/images/0_index-page/card-mac.png); background-size: cover; background-position: center; background-repeat: no-repeat; }
 #doc-cards .doc-card a { height: 10vw; /* Feste Höhe von 10vw */ min-width: 10vw; /* Mindestbreite von 10vw */ width: fit-content; /* Breite passt sich dem Inhalt an */ padding: 0 1vw; /* Leichtes Padding links und rechts */ display: flex; /* Flexbox für zentriertes Layout im Link */ align-items: center; /* Zentrierung des Texts vertikal */ justify-content: center; /* Zentrierung des Texts horizontal */ text-decoration: none; /* Entfernt die Unterstreichung des Links */ text-align: center; /* Zentriert den Text */ font-family: "Quicksand", sans-serif; font-weight: 900; font-size: 5vh; color: white; text-shadow: 1px 1px 0 black, -1px 1px 0 black,  1px -1px 0 black,  -1px -1px 0 black; }
-#doc-cards .doc-card:hover { transform: scale(1.03);         /* width: fit-content; height: 10.3vw;
- a { min-width: 10.3vw; width: calc(fit-content + 0.3vw); height: 10.3vw; } */ }
+#doc-cards .doc-card:hover { transform: scale(1.03); }
 #doc-cards h4 { letter-spacing: 0.5vw; margin-top: 3vh; }
 #doc-cards #card-mac { grid-area: 🍎; background-image: url(../images/0_index-page/card-mac.png); }
 #doc-cards #p-subhead { grid-area: P; }
@@ -23,3 +22,13 @@ button:hover { background-color: #0069d9; transform: scale(1.03); }
 #doc-cards #card-godot { grid-area: 🤖; background-image: url(../images/0_index-page/card-godot.png); }
 #doc-cards #a-subhead { grid-area: A; }
 #doc-cards #card-java { grid-area: 🍵; background-image: url(../images/0_index-page/card-java.png); }
+
+@media (prefers-color-scheme: dark) { header h4 { color: #bfcfe2; }
+  #doc-cards #card-html { background-image: url(../images/0_index-page/card-html_dark.png); }
+  #doc-cards #card-python { background-image: url(../images/0_index-page/card-python_dark.png); }
+  #doc-cards #card-godot { background-image: url(../images/0_index-page/card-godot_dark.png); }
+  #doc-cards #card-java { background-image: url(../images/0_index-page/card-java_dark.png); }
+  #doc-cards .doc-card {             /* currently not working:
+ // rainbow shadow &:before, &:after { content:''; position: absolute; top:-2px; left:-2px; width: calc(100% + 4px); height: calc(100% + 4px); background: linear-gradient( 45deg,  #fb0094,  #0000ff,  #00ff00,  #ffff00,  #ff0000,  #fb0094,  #0000ff,  #00ff00,  #ffff00,  #ff0000 ); background-size: 400%; z-index:-1; animation: shadow 20s linear infinite; }  &:after { top:-8px; left:-8px; width:calc(100% + 16px); height:calc(100% + 16px);     filter:blur(24px); opacity:0.9; }
+ @keyframes shadow { 0% { background-position: 0 0; } 50.01% { background-position: 200% 0; } 100% { background-position: 0 0; } } */ }
+  #doc-cards .doc-card a { color: #141414; text-shadow: 1px 1px 0 white, -1px 1px 0 white,  1px -1px 0 white,  -1px -1px 0 white; } }

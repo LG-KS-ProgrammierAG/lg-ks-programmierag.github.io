@@ -5,6 +5,24 @@
 @import "navbar";
 @import "article";
 
+// normal variables:
+:root {
+    --background-color: #eaecef;
+    --text-color: black;
+}
+
+//
+// Darkmode:
+//
+@media (prefers-color-scheme: dark) {
+    // darkmode variables:
+    :root {
+        --background-color: black;
+        --text-color: white;
+    }
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -13,5 +31,6 @@
 
 body {
     position: relative;
-    background: #eaecef;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }

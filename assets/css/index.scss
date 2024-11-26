@@ -54,6 +54,7 @@ button:hover {
     align-items: center;
     
     .doc-card {
+        position: relative;
         width: fit-content;
         height: 10vw;
         transition: all 0.2s ease-in-out;
@@ -91,16 +92,6 @@ button:hover {
     }
     .doc-card:hover {
         transform: scale(1.03);
-        /*
-        width: fit-content;
-        height: 10.3vw;
-
-        a {
-            min-width: 10.3vw;
-            width: calc(fit-content + 0.3vw);
-            height: 10.3vw;
-        }
-        */
     }
     h4 {
         letter-spacing: 0.5vw;
@@ -117,4 +108,77 @@ button:hover {
     #card-godot {grid-area: 🤖; background-image: url(../images/0_index-page/card-godot.png);}
     #a-subhead {grid-area: A}
     #card-java {grid-area: 🍵; background-image: url(../images/0_index-page/card-java.png);}
+}
+
+// DARKMODE
+@media (prefers-color-scheme: dark) {
+    header h4 {color: #bfcfe2}
+
+    #doc-cards {
+        #card-html {background-image: url(../images/0_index-page/card-html_dark.png);}
+        #card-python {background-image: url(../images/0_index-page/card-python_dark.png);}
+        #card-godot {background-image: url(../images/0_index-page/card-godot_dark.png);}
+        #card-java {background-image: url(../images/0_index-page/card-java_dark.png);}
+
+        .doc-card {
+            a {
+                color: #141414;
+                text-shadow: 
+                    1px 1px 0 white, 
+                    -1px 1px 0 white, 
+                    1px -1px 0 white, 
+                    -1px -1px 0 white;
+            }
+
+            /* currently not working:
+
+            // rainbow shadow
+            &:before, &:after {
+                content:'';
+                position: absolute;
+                top:-2px;
+                left:-2px;
+                width: calc(100% + 4px);
+                height: calc(100% + 4px);
+                background: linear-gradient(
+                    45deg, 
+                    #fb0094, 
+                    #0000ff, 
+                    #00ff00, 
+                    #ffff00, 
+                    #ff0000, 
+                    #fb0094, 
+                    #0000ff, 
+                    #00ff00, 
+                    #ffff00, 
+                    #ff0000
+                );
+                background-size: 400%;
+                z-index:-1;
+                animation: shadow 20s linear infinite;
+            }
+            
+            &:after {
+                top:-8px;
+                left:-8px;
+                width:calc(100% + 16px);
+                height:calc(100% + 16px);    
+                filter:blur(24px);
+                opacity:0.9;
+            }
+
+            @keyframes shadow {
+                0% {
+                    background-position: 0 0;
+                }
+                50.01% {
+                    background-position: 200% 0;
+                }
+                100% {
+                    background-position: 0 0;
+                }
+            }
+            */
+        }
+    }
 }

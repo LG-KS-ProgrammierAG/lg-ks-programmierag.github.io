@@ -95,6 +95,9 @@ h4 { font-family: "Quicksand", sans-serif; font-optical-sizing: auto; font-weigh
 .article-content .widget.warning { background-color: #ff5353; border: solid 1px #ef4646; background-image: url(../images/widget_icons/warning.svg); }
 .article-content .highlight { background-color: yellow; padding: 0.2em; border-radius: 0.2em; }
 
+:root { --background-color: #eaecef; --text-color: black; }
+
+@media (prefers-color-scheme: dark) { :root { --background-color: black; --text-color: white; } }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-body { position: relative; background: #eaecef; }
+body { position: relative; background-color: var(--background-color); color: var(--text-color); }
