@@ -37,6 +37,15 @@
         margin-top: 3vh;
     }
 
+    //
+    //  codehighlighting
+    //
+    code {
+        background-color: rgba($color: #808080, $alpha: 0.5);
+        padding: 2px 4px;
+        border-radius: 4px;
+    }
+
 
 
     //
@@ -67,16 +76,5 @@
         background-color: #ff5353;
         border: solid 1px #ef4646;
         background-image: url(../images/widget_icons/warning.svg);
-    }
-
-
-
-    //
-    //highlight
-    //
-    .highlight {
-        background-color: yellow;
-        padding: 0.2em;
-        border-radius: 0.2em;
     }
 }
