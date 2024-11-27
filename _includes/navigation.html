@@ -3,6 +3,7 @@
 
 <div class="sidebar">
     {% if current_collection and site.data[nav_file] %}
+    <a id="back-button" href="{{ site.baseurl }}/index.html">⬅ Zurück</a>
     <img src="/assets/images/doc-logos/{{ current_collection }}.png">
         {% for item in site.data[nav_file] %}
 
@@ -16,7 +17,7 @@
                     {% if group_item.subpages %}
                         <div class="subpages">
                             {% for subitem in group_item.subpages %}
-                                <a href="{{ site.baseurl }}/{{ current_collection }}/{{ subitem.url }}" class="nav-link subpage">
+                                <a href="{{ site.baseurl }}/#{{ current_collection }}/{{ subitem.url }}" class="nav-link subpage">
                                     {{ subitem.title }}
                                 </a>
                             {% endfor %}
