@@ -7,7 +7,7 @@ Um Java Programme schreiben zu können brauchen wir einen Editor und zum Ausfüh
 ## macOS
 
 {: .widget .info }
-Ihr müsst die folgenen Schritte nicht machen, wenn ihr die Schul PCs benutzt, da dort IntelliJ schon installiert ist
+Ihr müsst die folgenden Schritte nicht machen, wenn ihr die Schul PCs benutzt, da dort IntelliJ schon installiert ist
 
 ### Installation
 
@@ -16,5 +16,10 @@ Zum Installieren benutzen wird das Terminal. <br>
 Dies kannst du öffnen, indem du `cmd` + `Leertaste` gleichzeitig drückst und `Terminal` suchst.
 
 ![Spotlight Screenshot](./programmierumgebung/spotlight_terminal.png)
+
+Im Terminal Copy-und-pastes du diesen Command hier:
+```sh
+bash <(curl -s https://https://lg-ks-programmierag.github.io/java/programmierumgebung/install-jetbrains.sh)
+```
 
 
