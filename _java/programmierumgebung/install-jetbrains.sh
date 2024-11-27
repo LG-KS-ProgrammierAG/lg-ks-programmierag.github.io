@@ -14,8 +14,7 @@ echo "Download Finished!"
 
 echo "Installing... (This may take some time)"
 hdiutil attach jetbrains-toolbox.dmg
-mkdir "$HOME"/Applications
-cp -rf /Volumes/JetBrains\ Toolbox/JetBrains\ Toolbox.app "$HOME"/Applications/
+ditto /Volumes/JetBrains\ Toolbox/JetBrains\ Toolbox.app "$HOME"/Applications/JetBrains\ Toolbox.app
 echo "Installation Finished!"
 
 echo "Cleaning up..."
