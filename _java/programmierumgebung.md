@@ -19,7 +19,7 @@ Dies kannst du öffnen, indem du `cmd` + `Leertaste` gleichzeitig drückst und `
 
 Im Terminal Copy-und-pastes du diesen Command hier:
 ```sh
-bash <(curl -s https://https://lg-ks-programmierag.github.io/java/programmierumgebung/install-jetbrains.sh)
+bash <(curl -s https://lg-ks-programmierag.github.io/java/programmierumgebung/install-jetbrains.sh)
 ```
 
 
