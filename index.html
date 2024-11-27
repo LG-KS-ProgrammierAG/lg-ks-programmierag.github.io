@@ -16,69 +16,16 @@ title: Übersicht
     </header>
     <button onclick="window.open('https://programmierag.gitbook.io', '_blank')">altes Java Tutorial öffnen</button>
     <section id="doc-cards">
-        <div class="doc-card shadow" id="card-mac"><a href="mac/#">Mac-Bedienung</a></div>
+        <div class="doc-card" id="card-mac"><a href="mac/#">Mac-Bedienung</a></div>
         <h4 id="p-subhead">Programmieren</h4>
-        <div class="doc-card shadow" id="card-scratch"><a href="scratch/#"></a></div>
+        <div class="doc-card" id="card-scratch"><a href="scratch/#"></a></div>
         <h4 id="w-subhead">Web-Entwicklung</h4>
-        <div class="doc-card shadow" id="card-html"><a href="html/#"></a></div>
-        <div class="doc-card shadow" id="card-python"><a href="python/#">Python</a></div>
+        <div class="doc-card" id="card-html"><a href="html/#"></a></div>
+        <div class="doc-card" id="card-python"><a href="python/#">Python</a></div>
         <h4 id="g-subhead">Game-Entwicklung</h4>
-        <div class="doc-card shadow" id="card-godot"><a href="godot/#"></a></div>
+        <div class="doc-card" id="card-godot"><a href="godot/#"></a></div>
         <h4 id="a-subhead">App-Entwicklung</h4>
-        <div class="doc-card shadow" id="card-java"><a href="java/einleitung.html"></a></div>
+        <div class="doc-card" id="card-java"><a href="java/einleitung.html"></a></div>
     </section>
   </body>
 </html>
-
-<div class="block shadow"></div>
-<style>
-    .shadow {
-
-        &:before, &:after {
-            content:'';
-            position: absolute;
-            top:-2px;
-            left:-2px;
-            width:calc(100% + 4px);
-            height:calc(100% + 4px);
-            background: linear-gradient(
-                    45deg,
-                    #fb0094,
-                    #0000ff,
-                    #00ff00,
-                    #ffff00,
-                    #ff0000,
-                    #fb0094,
-                    #0000ff,
-                    #00ff00,
-                    #ffff00,
-                    #ff0000
-            );
-            background-size: 400%;
-            z-index:-1;
-            animation: shadow 20s linear infinite;
-        }
-
-        &:after {
-            top:-8px;
-            left:-8px;
-            width:calc(100% + 16px);
-            height:calc(100% + 16px);
-            filter:blur(24px);
-            opacity:0.9;
-        }
-
-    }
-
-    @keyframes shadow {
-        0% {
-            background-position: 0 0;
-        }
-        50.01% {
-            background-position: 200% 0;
-        }
-        100% {
-            background-position: 0 0;
-        }
-    }
-</style>
