@@ -78,6 +78,8 @@ h4 { font-family: "Quicksand", sans-serif; font-optical-sizing: auto; font-weigh
 .ibm-plex-mono-bold-italic { font-family: "IBM Plex Mono", serif; font-weight: 700; font-style: italic; }
 
 .sidebar { position: absolute; top: 0; left: 0; width: 25vw; height: 100vh; overflow-y: scroll; background-color: var(--background-color-secondary); color: var(--text-color-secondary); font-family: "arial", sans-serif; font-weight: 600; font-style: normal; font-size: 2vh; display: flex; flex-direction: column; border-right: 2px solid var(--background-color-accent); }
+.sidebar #back-button { background-color: var(--accent-secondary); color: var(--text-color); padding: 12px 24px; font-size: 16px; font-weight: bold; border: none; border-radius: 8px; cursor: pointer; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); transition: background-color 0.2s, transform 0.1s; margin: 3vh auto; /* Vertikaler Abstand und zentriert */ display: block; /* Block-Display, um zentriert zu sein */ }
+.sidebar #back-button:hover { background-color: var(--accent-primary); transform: scale(1.03); }
 .sidebar img { width: 100%; height: 20vh; object-fit: contain; }
 .sidebar .group-title { font-size: 1.1em; color: var(--text-color-triary); margin: 20px 0 10px; padding-left: 1vw; font-family: "Quicksand", sans-serif; font-weight: 900; font-style: normal; text-transform: uppercase; cursor: default; }
 .sidebar .nav-link { color: var(--text-color-secondary); padding: 1vh 2vw; text-decoration: none; font-size: 1em; display: flex; align-items: center; width: 100%; }
