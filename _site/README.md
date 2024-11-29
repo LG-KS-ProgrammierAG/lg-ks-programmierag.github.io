@@ -1,26 +1,20 @@
-# Willkommen bei Programmieren Lernen 
+# Dokumentation für ProgrammierAG an LG-KS
 
-## Über die Website
+## Dokumentation für Dokumentation:
 
-Willkommen auf unserer Website "Programmieren Lernen", Ihrem umfassenden Leitfaden für das Erlernen von Programmierung und Softwareentwicklung! Unsere Mission ist es, Programmierung für alle zugänglich zu machen – unabhängig von Vorwissen oder Alter. Hier finden Sie Tutorials, Beispiele und Ressourcen, um Ihre Programmierkenntnisse zu erweitern.
+### Neue Collection hinzufügen:
 
-## Inhalte
+1. In `_config.yml` neue `collection` anlegen und neues `default` mit layout `article` hinzufügen.
+2. Ordner `_<collection-name>` in `/root` erstellen.
+3. `nav_<collection-name>.yml` in `_data` erstellen und Seiten anlegen.
 
-### Tutorials
+### Neue Seite anlegen:
 
-Unsere Tutorials decken eine Vielzahl von Programmiersprachen und -themen ab, darunter:
-- **Scratch**: Programmierung mit Code-Blöcken
-- **Python**: Einsteiger- und Fortgeschrittenenkurse
-- **HTML/CSS**: Webdesign und -layout
-- **JavaScript**: Webentwicklung und interaktive Anwendungen
-- **Java**: Grundlagen und objektorientierte Programmierung
-- **Godot** Eintwicklung einfacher Spiele
-- **C++**: Leistungsstarke Anwendungen und Spieleentwicklung
-
-### Beispiele und Projekte
-
-Lernen Sie durch praktische Beispiele und Projekte. Hier sind einige der Kategorien:
-- **Einsteigerprojekte**: Ideal für Neulinge
-- **Webentwicklung**: Webseiten und Webanwendungen
-- **Spieleprogrammierung**: Entwickeln Sie einfache Spiele
-- **Datenanalyse**: Nutzen Sie Ihre Programmierkenntnisse für die Datenwissenschaft
+1. Im Collection Verzeichnis datei `.md` erstellen.
+2. YML Head hinzufügen:
+```
+---
+title: "Eine Java Datei"
+---
+```
+3. Seite in `_data/nav_<collection>.yml` hinzufügen.

@@ -17,7 +17,7 @@
                     {% if group_item.subpages %}
                         <div class="subpages">
                             {% for subitem in group_item.subpages %}
-                                <a href="{{ site.baseurl }}/#{{ current_collection }}/{{ subitem.url }}" class="nav-link subpage">
+                                <a href="{{ site.baseurl }}/{{ current_collection }}/{{ subitem.url }}" class="nav-link subpage">
                                     {{ subitem.title }}
                                 </a>
                             {% endfor %}
