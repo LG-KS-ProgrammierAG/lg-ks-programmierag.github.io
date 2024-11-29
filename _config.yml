@@ -15,7 +15,7 @@ defaults:
 #    values:
 #      layout: "post"
 
-
+highlighter: rouge
 
 url: "https://lg-ks-programmierag.github.io"
 baseurl: ""
