@@ -87,7 +87,7 @@ h4 { font-family: "Quicksand", sans-serif; font-optical-sizing: auto; font-weigh
 .sidebar .nav-link.active { background-color: var(--accent-primary); }
 .sidebar .subpage.nav-link { padding-left: 4vw; }
 
-.article-content { position: absolute; top: 0; left: 25vw; width: calc(100vw - 25vw); height: 100vh; overflow-y: scroll; cursor: default; padding: 0 5vw; display: flex; flex-direction: column; gap: 2vh; font-family: "Poppins", sans-serif; font-weight: 400; font-style: normal; font-size: 2vh; }
+.article-content { position: absolute; top: 0; left: 25vw; width: calc(100vw - 25vw); height: 100vh; overflow-y: scroll; cursor: default; padding: 0 5vw; padding-bottom: 10vh; display: flex; flex-direction: column; gap: 2vh; font-family: "Poppins", sans-serif; font-weight: 400; font-style: normal; font-size: 2vh; }
 .article-content h1, .article-content h2, .article-content h3 { font-family: "Quicksand", san-serif; font-weight: 700; font-style: normal; margin-bottom: 2vh; }
 .article-content h1 { font-size: 5vh; margin-top: 7vh; }
 .article-content h2 { font-size: 4vh; margin-top: 5vh; }
