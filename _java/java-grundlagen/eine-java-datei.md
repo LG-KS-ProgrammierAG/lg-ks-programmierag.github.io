@@ -1,6 +1,5 @@
 ---
 title: "Eine Java Datei"
-layout: article
 ---
 
 Wenn du dein erstes Programm erstellst, wird das Programm erst einmal wie das Folgende oder ähnlich aussehen:

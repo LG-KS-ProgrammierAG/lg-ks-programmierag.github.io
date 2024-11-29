@@ -1,19 +1,18 @@
 collections:
   java:
     output: true
-    #order:
-    #  - einführung.md
+# <name>:
+#   output: true
 
 defaults:
   - scope:
       type: "java"
     values:
       layout: "article"
-#  - scope:
-#      path: ""
-#      type: "posts"
-#    values:
-#      layout: "post"
+# - scope:
+#     type: "<name>"
+#   values:
+#     layout: "article"
 
 highlighter: rouge
 
