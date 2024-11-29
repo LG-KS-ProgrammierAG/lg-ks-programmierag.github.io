@@ -1,7 +1,7 @@
 ---
 title: "Variablen"
 layout: article
----
+--- 
 
 Alles was wir in Java tun basiert auf dem Erstellen und Benutzen von Variablen. 
 
