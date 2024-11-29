@@ -8,8 +8,10 @@ Alles was wir in Java tun basiert auf dem Erstellen und Benutzen von Variablen.
 Variablen werden genutzt, um Daten zu speichern.
 
 ```java
-        int meineZahl = 7;
-        //  Typ    Name    Wert
+Beispiel:
+
+    int meineZahl = 7;
+    //  Typ    Name    Wert
 ```
 Jede Variable hat drei Bestandteile:
 
@@ -20,11 +22,12 @@ In unserem Beispiel ist ```int``` der Typ, ```meineZahl```der Name und ```7```de
 Den Namen einer Variable können wir frei festlegen. Der Typ und der Wert müssen zu einander passen.
 
 **Variablentypen**
+
 ```int``` *integer* ist eine Ganzzahl, das heißt, eine Zahl ohne Komma. Beispiel: 7, 3, 43.
 
-```float```ist eine Kommazahl. Beispiel: 5.6, 34.6, 8.54. **Statt einem Komma wird ein Punkt verwendet, wie es im Englischen üblich ist.**
+```float``` ist eine Kommazahl. Beispiel: 5.6, 34.6, 8.54. **Statt einem Komma wird ein Punkt verwendet, wie es im Englischen üblich ist.**
 
-```char```*character* ist ein einzelnes Zeichen. Beispiel: 'H'  '@'  'k'. **Bei ```char```ist es wichtig, die Zeichen mit Anführungsstrichen kenntlich zu machen.**
+```char``` *character* ist ein einzelnes Zeichen. Beispiel: 'H'  '@'  'k'. **Bei ```char```ist es wichtig, die Zeichen mit Anführungsstrichen kenntlich zu machen.**
 
 Die bisher genannten Datentypen sind alles primitive Typen. Man erkennt sie an dem klein geschriebenen Anfangsbuchstaben.
 
