@@ -40,6 +40,21 @@
         margin-top: 3vh;
     }
 
+    hr {margin: 3vh 0;} // horizontal line
+
+
+
+    //
+    //  bullet points
+    //
+    ol, ul {
+        margin-left: 3vw;
+    }
+    ol li {margin-bottom: 2vh;}
+    ol li:last-child {margin-bottom: 0;}
+
+
+
     //
     //  codehighlighting
     //
@@ -50,7 +65,7 @@
         cursor: text;
     }
     pre {
-        background-color: rgba($color: #808080, $alpha: 0.5);
+        background-color: rgba($color: #808080, $alpha: 0.2);
         padding: 16px;
         border-radius: 8px;
         overflow-x: auto;

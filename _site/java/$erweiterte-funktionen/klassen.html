@@ -1,0 +1,369 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Java-Klassen</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    
+
+
+<div class="sidebar">
+    
+    <a id="back-button" href="/index.html">⬅ Zurück</a>
+    <img src="/assets/images/doc-logos/java.png">
+        
+
+            <!-- display group -->
+            
+                <a href="/java/einleitung.html" class="nav-link">
+                    Einleitung
+                </a>
+                
+            
+
+        
+
+            <!-- display group -->
+            
+                <a href="/java/programmierumgebung.html" class="nav-link">
+                    Programmierumgebung
+                </a>
+                
+            
+
+        
+
+            <!-- display group -->
+            
+                <h2 class="group-title">Java-Grundlagen</h2>
+                
+                    <a href="/java/$java-grundlagen/eine-java-datei.html" class="nav-link">
+                        Eine Java Datei
+                    </a>
+                    
+                
+                    <a href="/java/$java-grundlagen/variablen.html" class="nav-link">
+                        Variablen
+                    </a>
+                    
+                
+                    <a href="/java/$java-grundlagen/if-else.html" class="nav-link">
+                        if-else
+                    </a>
+                    
+                
+                    <a href="/java/$java-grundlagen/methoden.html" class="nav-link">
+                        Methoden
+                    </a>
+                    
+                
+                    <a href="/java/$java-grundlagen/schleifen.html" class="nav-link">
+                        Schleifen
+                    </a>
+                    
+                        <div class="subpages">
+                            
+                                <a href="/java/$java-grundlagen/schleifen/while-schleife.html" class="nav-link subpage">
+                                    while-Schleife
+                                </a>
+                            
+                                <a href="/java/$java-grundlagen/schleifen/for-schleife.html" class="nav-link subpage">
+                                    for-Schleife
+                                </a>
+                            
+                        </div>
+                    
+                
+                    <a href="/java/$java-grundlagen/erstes-spiel.html" class="nav-link">
+                        Dein erstes kleines Spiel
+                    </a>
+                    
+                        <div class="subpages">
+                            
+                                <a href="/java/$java-grundlagen/erstes-spiel/zufallsgenerator.html" class="nav-link subpage">
+                                    Zufallsgenerator
+                                </a>
+                            
+                        </div>
+                    
+                
+            
+            <!-- display ungrouped page -->
+            
+
+        
+
+            <!-- display group -->
+            
+                <h2 class="group-title">Erweiterte Funktionen von Java</h2>
+                
+                    <a href="/java/$erweiterte-funktionen/klassen.html" class="nav-link">
+                        Klassen
+                    </a>
+                    
+                
+            
+            <!-- display ungrouped page -->
+            
+
+        
+
+            <!-- display group -->
+            
+                <h2 class="group-title">Einfaches Spiel mit Grafik</h2>
+                
+                    <a href="/java/$einfaches-spiel/j-frame-einfuehrung.html" class="nav-link">
+                        Einführung in J-Frame
+                    </a>
+                    
+                
+                    <a href="/java/$einfaches-spiel/pong-spiel.html" class="nav-link">
+                        Einfaches Pong Spiel mit J-Frame
+                    </a>
+                    
+                
+            
+            <!-- display ungrouped page -->
+            
+
+        
+    
+</div>
+
+<!-- original sidebar code:
+
+<div class="sidebar">
+    <h2 class="group-title">Gruppe 1</h2>
+    <a href="#" class="nav-link active"><span class="icon">🏠</span> Seite 1</a>
+    <a href="#" class="nav-link"><span class="icon">📄</span> Seite 2</a>
+    <div class="subpages">
+        <a href="#" class="nav-link subpage"><span class="icon">📑</span> Unterseite 2.1</a>
+        <a href="#" class="nav-link subpage"><span class="icon">📑</span> Unterseite 2.2</a>
+    </div>
+
+    <h2 class="group-title">Gruppe 2</h2>
+    <a href="#" class="nav-link"><span class="icon">📄</span> Seite 3</a>
+    <div class="subpages">
+        <a href="#" class="nav-link subpage"><span class="icon">📑</span> Unterseite 3.1</a>
+        <a href="#" class="nav-link subpage"><span class="icon">📑</span> Unterseite 3.2</a>
+    </div>
+</div>
+
+-->
+
+    <div class="article-content">
+      <h1>Java-Klassen</h1>
+      <p>Auf dieser Seite erfährst du alles Wichtige über Klassen in Java: Was sie sind, warum sie wichtig sind, wie man sie erstellt und verwendet. Wir gehen Schritt für Schritt vor und bauen ein einfaches Beispiel.</p>
+
+<h2 id="was-ist-eine-klasse">Was ist eine Klasse?</h2>
+
+<p>Eine Klasse ist ein Bauplan für Objekte. Sie beschreibt:</p>
+
+<ol>
+  <li><strong>Eigenschaften</strong> (Daten oder Attribute), die ein Objekt haben kann.</li>
+  <li><strong>Verhalten</strong> (Methoden), was ein Objekt tun kann.</li>
+</ol>
+
+<h3 id="beispiel-aus-dem-alltag">Beispiel aus dem Alltag</h3>
+
+<p>Stell dir eine Klasse als Vorlage für “Autos” vor:</p>
+
+<ul>
+  <li><strong>Eigenschaften:</strong> Farbe, Marke, PS.</li>
+  <li><strong>Verhalten:</strong> Fahren, Hupen.</li>
+</ul>
+
+<p>Ein einzelnes Auto (z. B. ein roter Ferrari) wäre ein Objekt der Klasse Auto.</p>
+
+<h2 id="wie-erstellt-man-eine-klasse">Wie erstellt man eine Klasse?</h2>
+
+<p>Eine Klasse wird mit dem Schlüsselwort <code class="language-plaintext highlighter-rouge">class</code> definiert. Hier ein Beispiel für eine Klasse namens <code class="language-plaintext highlighter-rouge">Auto</code>:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Auto</span> <span class="o">{</span>
+    <span class="c1">// Eigenschaften (Attribute)</span>
+    <span class="nc">String</span> <span class="n">farbe</span><span class="o">;</span>
+    <span class="nc">String</span> <span class="n">marke</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">ps</span><span class="o">;</span>
+
+    <span class="c1">// Verhalten (Methoden)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">fahren</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Das Auto fährt."</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">hupen</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Huuup!"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="was-passiert-hier">Was passiert hier?</h3>
+
+<ol>
+  <li><strong>Attribute:</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">String farbe</code>: Speichert die Farbe des Autos.</li>
+      <li><code class="language-plaintext highlighter-rouge">String marke</code>: Speichert die Marke des Autos.</li>
+      <li><code class="language-plaintext highlighter-rouge">int ps</code>: Speichert die PS-Zahl des Autos.</li>
+    </ul>
+  </li>
+  <li><strong>Methoden:</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">fahren()</code>: Gibt eine Nachricht aus, dass das Auto fährt.</li>
+      <li><code class="language-plaintext highlighter-rouge">hupen()</code>: Gibt eine Hupe aus.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="wie-verwendet-man-eine-klasse">Wie verwendet man eine Klasse?</h2>
+<h3 id="objekte-erstellen">Objekte erstellen</h3>
+
+<p>Mit dem <code class="language-plaintext highlighter-rouge">new</code>-Schlüsselwort kannst du ein Objekt aus einer Klasse erstellen:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Erstellen eines Objekts der Klasse Auto</span>
+        <span class="nc">Auto</span> <span class="n">meinAuto</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Auto</span><span class="o">();</span>
+
+        <span class="c1">// Eigenschaften setzen</span>
+        <span class="n">meinAuto</span><span class="o">.</span><span class="na">farbe</span> <span class="o">=</span> <span class="s">"Rot"</span><span class="o">;</span>
+        <span class="n">meinAuto</span><span class="o">.</span><span class="na">marke</span> <span class="o">=</span> <span class="s">"Ferrari"</span><span class="o">;</span>
+        <span class="n">meinAuto</span><span class="o">.</span><span class="na">ps</span> <span class="o">=</span> <span class="mi">500</span><span class="o">;</span>
+
+        <span class="c1">// Methoden aufrufen</span>
+        <span class="n">meinAuto</span><span class="o">.</span><span class="na">fahren</span><span class="o">();</span>
+        <span class="n">meinAuto</span><span class="o">.</span><span class="na">hupen</span><span class="o">();</span>
+
+        <span class="c1">// Eigenschaften ausgeben</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Farbe: "</span> <span class="o">+</span> <span class="n">meinAuto</span><span class="o">.</span><span class="na">farbe</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Marke: "</span> <span class="o">+</span> <span class="n">meinAuto</span><span class="o">.</span><span class="na">marke</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"PS: "</span> <span class="o">+</span> <span class="n">meinAuto</span><span class="o">.</span><span class="na">ps</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="was-passiert-hier-1">Was passiert hier?</h3>
+
+<ol>
+  <li>
+    <p><strong>Objekt erstellen:</strong></p>
+
+    <p><code class="language-plaintext highlighter-rouge">Auto meinAuto = new Auto();</code> erstellt ein Auto-Objekt namens <code class="language-plaintext highlighter-rouge">meinAuto</code>.</p>
+  </li>
+  <li>
+    <p><strong>Eigenschaften setzen:</strong></p>
+
+    <p>Mit <code class="language-plaintext highlighter-rouge">meinAuto.farbe = "Rot";</code> setzen wir die Farbe des Autos.</p>
+  </li>
+  <li>
+    <p><strong>Methoden verwenden:</strong></p>
+
+    <p><code class="language-plaintext highlighter-rouge">meinAuto.fahren()</code> ruft die Methode <code class="language-plaintext highlighter-rouge">fahren()</code> auf.
+ <code class="language-plaintext highlighter-rouge">meinAuto.hupen()</code> ruft die Methode <code class="language-plaintext highlighter-rouge">hupen()</code> auf.</p>
+  </li>
+  <li>
+    <p><strong>Eigenschaften lesen:</strong></p>
+
+    <p>Mit <code class="language-plaintext highlighter-rouge">meinAuto.farbe</code> können wir die Farbe des Autos ausgeben.</p>
+  </li>
+</ol>
+
+<h2 id="konstruktoren--eine-abkürzung">Konstruktoren – Eine Abkürzung</h2>
+
+<h3 id="was-ist-ein-konstruktor">Was ist ein Konstruktor?</h3>
+
+<p>Ein Konstruktor ist eine spezielle Methode, die automatisch aufgerufen wird, wenn ein Objekt erstellt wird. Mit einem Konstruktor kannst du direkt beim Erstellen Werte setzen.</p>
+
+<h3 id="beispiel">Beispiel:</h3>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Auto</span> <span class="o">{</span>
+    <span class="nc">String</span> <span class="n">farbe</span><span class="o">;</span>
+    <span class="nc">String</span> <span class="n">marke</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">ps</span><span class="o">;</span>
+
+    <span class="c1">// Konstruktor</span>
+    <span class="kd">public</span> <span class="nf">Auto</span><span class="o">(</span><span class="nc">String</span> <span class="n">farbe</span><span class="o">,</span> <span class="nc">String</span> <span class="n">marke</span><span class="o">,</span> <span class="kt">int</span> <span class="n">ps</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">farbe</span> <span class="o">=</span> <span class="n">farbe</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">marke</span> <span class="o">=</span> <span class="n">marke</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ps</span> <span class="o">=</span> <span class="n">ps</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">fahren</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Das Auto fährt."</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">hupen</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Huuup!"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="objekte-mit-konstruktor-erstellen">Objekte mit Konstruktor erstellen</h3>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Auto</span> <span class="n">meinAuto</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Auto</span><span class="o">(</span><span class="s">"Rot"</span><span class="o">,</span> <span class="s">"Ferrari"</span><span class="o">,</span> <span class="mi">500</span><span class="o">);</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Farbe: "</span> <span class="o">+</span> <span class="n">meinAuto</span><span class="o">.</span><span class="na">farbe</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Marke: "</span> <span class="o">+</span> <span class="n">meinAuto</span><span class="o">.</span><span class="na">marke</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"PS: "</span> <span class="o">+</span> <span class="n">meinAuto</span><span class="o">.</span><span class="na">ps</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Hier spart der Konstruktor Zeit: Statt die Eigenschaften einzeln zu setzen, übergeben wir sie direkt beim Erstellen des Objekts.</p>
+
+<h2 id="getter-und-setter--kontrolle-über-attribute">Getter und Setter – Kontrolle über Attribute</h2>
+
+<p>Manchmal möchten wir die Attribute einer Klasse schützen, sodass sie nicht direkt verändert werden können. Dafür verwenden wir <strong>Getter</strong> und <strong>Setter</strong>.</p>
+
+<h3 id="beispiel-mit-getter-und-setter">Beispiel mit Getter und Setter:</h3>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Auto</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">farbe</span><span class="o">;</span>
+
+    <span class="c1">// Setter</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setFarbe</span><span class="o">(</span><span class="nc">String</span> <span class="n">farbe</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">farbe</span> <span class="o">=</span> <span class="n">farbe</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="c1">// Getter</span>
+    <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getFarbe</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">farbe</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="verwendung">Verwendung:</h3>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Auto</span> <span class="n">meinAuto</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Auto</span><span class="o">();</span>
+        <span class="n">meinAuto</span><span class="o">.</span><span class="na">setFarbe</span><span class="o">(</span><span class="s">"Blau"</span><span class="o">);</span> <span class="c1">// Farbe setzen</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Farbe: "</span> <span class="o">+</span> <span class="n">meinAuto</span><span class="o">.</span><span class="na">getFarbe</span><span class="o">());</span> <span class="c1">// Farbe ausgeben</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="warum-getter-und-setter">Warum Getter und Setter?</h3>
+
+<ul>
+  <li><strong>Schutz:</strong> Niemand kann direkt meinAuto.farbe = “Grün”; setzen.</li>
+  <li><strong>Kontrolle:</strong> In den Setter kann Logik eingebaut werden, z. B. nur gültige Farben zulassen.</li>
+</ul>
+
+<h2 id="zusammenfassung">Zusammenfassung</h2>
+
+<ul>
+  <li><strong>Klassen:</strong> Baupläne für Objekte. Sie enthalten Attribute und Methoden.</li>
+  <li><strong>Objekte:</strong> Instanzen von Klassen, die mit new erstellt werden.
+  Konstruktoren: Vereinfachen die Objekterstellung, indem sie Werte direkt setzen.</li>
+  <li><strong>Getter und Setter:</strong> Schützen die Daten einer Klasse und geben mehr Kontrolle.</li>
+</ul>
+
+<hr />
+
+<p>Mit diesem Wissen kannst du jetzt deine eigenen Klassen erstellen und verwenden!</p>
+
+<p><strong>Probier es aus:</strong> Wie wäre es mit einer Klasse für ein <em>“Buch”</em>, einen <em>“Spieler”</em> oder ein <em>“Tier”</em>? 😊</p>
+
+    </div>
+  </body>
+</html>
