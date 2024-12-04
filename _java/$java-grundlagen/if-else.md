@@ -1,5 +1,5 @@
 ---
-title: "If-else"
+title: "if-else"
 ---
 Was ist eine if-else-Abfrage?
 
