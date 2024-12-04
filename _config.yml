@@ -1,12 +1,18 @@
 collections:
   java:
     output: true
+  c++:
+    output: true
 # <name>:
 #   output: true
 
 defaults:
   - scope:
       type: "java"
+    values:
+      layout: "article"
+  - scope:
+      type: "c++"
     values:
       layout: "article"
 # - scope:
