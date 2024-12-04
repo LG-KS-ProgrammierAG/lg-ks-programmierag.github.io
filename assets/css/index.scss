@@ -130,7 +130,7 @@ button:hover {
                     -1px -1px 0 white;
             }
 
-            /* currently not working:
+            /* currently not working: */
 
             // rainbow shadow
             &:before, &:after {
@@ -166,7 +166,7 @@ button:hover {
                 filter:blur(24px);
                 opacity:0.9;
             }
-
+            /*
             @keyframes shadow {
                 0% {
                     background-position: 0 0;
