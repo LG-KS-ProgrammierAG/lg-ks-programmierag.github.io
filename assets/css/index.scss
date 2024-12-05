@@ -155,10 +155,6 @@ button:hover {
                 z-index:-1;
                 animation: shadow 20s linear infinite;
             }
-            .doc-card::before:hover, .doc-card::after:hover {
-                transform: scale(1.03);
-                z-index: -1;
-            }
             
             &:after {
                 top:-8px;
@@ -179,10 +175,6 @@ button:hover {
                 100% {
                     background-position: 0% 0;
                 }
-            }
-
-            #card-mac {
-                box-shadow: inset 0 0 0 20px black;
             }
         }
     }
