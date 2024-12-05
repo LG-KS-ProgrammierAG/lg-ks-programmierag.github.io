@@ -60,59 +60,23 @@ button:hover {
         transition: all 0.2s ease-in-out;
         border-radius: 1vw;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        //box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
-        overflow: hidden;
+        //overflow: hidden;
 
         background-image: url(assets/images/0_index-page/card-mac.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         
-        &:before,
-        &:after {
-            content: '';
-            position: absolute;
-            top: -10px;
-            left: -10px;
-            width: calc(100% + 20px);
-            height: calc(100% + 20px);
-            background: linear-gradient(
-                45deg,
-                #fb0094,
-                #0000ff,
-                #00ff00,
-                #ffff00,
-                #ff0000,
-                #fb0094,
-                #0000ff,
-                #00ff00,
-                #ffff00,
-                #ff0000
-            );
-            background-size: 400%;
-            z-index: -1;
-            animation: shadow 20s linear infinite;
-        }
-
-        &:after {
-            top: -8px;
-            left: -8px;
-            width: calc(100% + 16px);
-            height: calc(100% + 16px);
-            filter: blur(24px);
-            opacity: 0.9;
-        }
-
         a {
-            height: 10vw;          /* Feste Höhe von 10vw */
-            min-width: 10vw;       /* Mindestbreite von 10vw */
-            width: fit-content;    /* Breite passt sich dem Inhalt an */
-            padding: 0 1vw;       /* Leichtes Padding links und rechts */
-            display: flex;         /* Flexbox für zentriertes Layout im Link */
-            align-items: center;   /* Zentrierung des Texts vertikal */
-            justify-content: center; /* Zentrierung des Texts horizontal */
-            text-decoration: none; /* Entfernt die Unterstreichung des Links */
-            text-align: center;    /* Zentriert den Text */
+            height: 10vw;
+            min-width: 10vw;
+            width: fit-content;
+            padding: 0 1vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            text-align: center;
 
             font-family: "Quicksand", sans-serif;
             font-weight: 900;
@@ -165,8 +129,6 @@ button:hover {
                     -1px -1px 0 white;
             }
 
-            /* currently not working:
-
             // rainbow shadow
             &:before, &:after {
                 content:'';
@@ -175,6 +137,7 @@ button:hover {
                 left:-2px;
                 width: calc(100% + 4px);
                 height: calc(100% + 4px);
+                border-radius: 1vw;
                 background: linear-gradient(
                     45deg, 
                     #fb0094, 
@@ -191,6 +154,10 @@ button:hover {
                 background-size: 400%;
                 z-index:-1;
                 animation: shadow 20s linear infinite;
+            }
+            .doc-card::before:hover, .doc-card::after:hover {
+                transform: scale(1.03);
+                z-index: -1;
             }
             
             &:after {
@@ -210,10 +177,13 @@ button:hover {
                     background-position: 200% 0;
                 }
                 100% {
-                    background-position: 0 0;
+                    background-position: 0% 0;
                 }
             }
-            */
+
+            #card-mac {
+                box-shadow: inset 0 0 0 20px black;
+            }
         }
     }
 }
