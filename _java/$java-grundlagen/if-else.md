@@ -1,7 +1,7 @@
 ---
 title: "if-else"
 ---
-Was ist eine if-else-Abfrage?
+***Was ist eine if-else-Abfrage?***
 
 **If:** Das ist wie ein "Wenn" in der menschlichen Sprache. Wenn eine bestimmte Bedingung erfüllt ist, wird der Code innerhalb des `if`-Blocks ausgeführt.
 
@@ -43,7 +43,7 @@ public class IfElseBeispiel { // HIER MUSS DER DATEINAME STEHEN!
 
 **If-else-Abfrage:**
 
-* Bedingung: `zahl > 10` (Ist die eingegebene Zahl größer als 10?)
+* **Bedingung:** `zahl > 10` (Ist die eingegebene Zahl größer als 10?)
 
     * Wenn ja: Die Nachricht "Die Zahl ist größer als 10." wird ausgegeben.
 
@@ -118,7 +118,7 @@ public class Gaesteliste {
 
 * **Fehler vermeiden:** Du kannst überprüfen, ob eingegebene Daten korrekt sind, bevor du sie weiterverwendest.
 
-**Zusammenfassung**
+**Zusammenfassung:**
 
 * `if-else`-Abfragen ermöglichen es deinem Programm, Entscheidungen zu treffen.
 
