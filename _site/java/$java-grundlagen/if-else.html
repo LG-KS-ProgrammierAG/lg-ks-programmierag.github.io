@@ -155,7 +155,7 @@
 
     <div class="article-content">
       <h1>if-else</h1>
-      <p>Was ist eine if-else-Abfrage?</p>
+      <p><strong><em>Was ist eine if-else-Abfrage?</em></strong></p>
 
 <p><strong>If:</strong> Das ist wie ein “Wenn” in der menschlichen Sprache. Wenn eine bestimmte Bedingung erfüllt ist, wird der Code innerhalb des <code class="language-plaintext highlighter-rouge">if</code>-Blocks ausgeführt.</p>
 
@@ -187,6 +187,125 @@
     <span class="o">}</span>
 <span class="o">}</span>
 </code></pre></div></div>
+<p><strong>Was passiert hier?</strong></p>
+
+<p><strong>Scanner:</strong> Mit <code class="language-plaintext highlighter-rouge">Scanner</code> können wir Eingaben vom Benutzer einlesen. Zuerst erstellen wir also im Code einen Scanner.</p>
+
+<p><strong>Eingabe:</strong> Der Benutzer gibt eine Zahl ein.</p>
+
+<p><strong>If-else-Abfrage:</strong></p>
+
+<ul>
+  <li>
+    <p><strong>Bedingung:</strong> <code class="language-plaintext highlighter-rouge">zahl &gt; 10</code> (Ist die eingegebene Zahl größer als 10?)</p>
+
+    <ul>
+      <li>
+        <p>Wenn ja: Die Nachricht “Die Zahl ist größer als 10.” wird ausgegeben.</p>
+      </li>
+      <li>
+        <p>Wenn nein: Die Nachricht “Die Zahl ist kleiner gleich 10.” wird ausgegeben.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="beispiel-ein-einfaches-quiz">Beispiel: Ein einfaches Quiz</h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Quiz</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Scanner</span> <span class="n">scanner</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Wie heißt die Hauptstadt von Deutschland? "</span><span class="o">);</span>
+        <span class="nc">String</span> <span class="n">antwort</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">nextLine</span><span class="o">();</span>
+
+        <span class="k">if</span> <span class="o">(</span><span class="n">antwort</span><span class="o">.</span><span class="na">equalsIgnoreCase</span><span class="o">(</span><span class="s">"Berlin"</span><span class="o">))</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Richtig!"</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Leider falsch. Die Hauptstadt von Deutschland ist Berlin."</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p><strong>Was macht dieses Programm?</strong></p>
+
+<p>Es fragt den Benutzer nach der Hauptstadt von Deutschland.</p>
+
+<ul>
+  <li>
+    <p>Die Antwort wird mit “Berlin” verglichen (egal ob groß oder klein geschrieben -&gt; 
+<code class="language-plaintext highlighter-rouge">IgnoreCase</code>).</p>
+  </li>
+  <li>
+    <p>Wenn die Antwort richtig ist, gibt das Programm “Richtig!” aus, sonst wird eine Fehlermeldung angezeigt.</p>
+  </li>
+</ul>
+
+<h2 id="mehrere-if-abfragen-hintereinander">Mehrere if-Abfragen hintereinander:</h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Gaesteliste</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Scanner</span> <span class="n">scanner</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Bitte gib deinen Namen ein: "</span><span class="o">);</span>
+        <span class="nc">String</span> <span class="n">antwort</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">nextLine</span><span class="o">();</span>
+
+        <span class="k">if</span> <span class="o">(</span><span class="n">antwort</span><span class="o">.</span><span class="na">equalsIgnoreCase</span><span class="o">(</span><span class="s">"Tom"</span><span class="o">))</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Bitte treten Sie ein, Chef!"</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">antwort</span><span class="o">.</span><span class="na">equalsIgnoreCase</span><span class="o">(</span><span class="s">"Max"</span><span class="o">))</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">,</span><span class="n">println</span><span class="o">(</span><span class="s">"Guten Tag. Sie stehen auf der Gästeliste."</span><span class="o">)</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Sie stehen nicht auf der Gästeliste."</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p><strong>Was macht das Programm?</strong></p>
+
+<ul>
+  <li>Durch ein <code class="language-plaintext highlighter-rouge">else if</code>
+ kann eine weitere Bedingung abgefragt werden, wenn die erste nicht erfüllt wird. So können mehr verschiedene Optionen berücksichtigt werden.</li>
+</ul>
+
+<p>Warum sind <code class="language-plaintext highlighter-rouge">if-else</code>-Abfragen wichtig?
+ —</p>
+
+<ul>
+  <li>
+    <p><strong>Entscheidungen treffen:</strong> Mit if-else kannst du deinem Programm sagen, welche Aktion es ausführen soll, basierend auf bestimmten Bedingungen.</p>
+  </li>
+  <li>
+    <p><strong>Programme interaktiver machen:</strong> Durch die Möglichkeit, Benutzereingaben zu verarbeiten, können Programme auf verschiedene Situationen reagieren.</p>
+  </li>
+  <li>
+    <p><strong>Fehler vermeiden:</strong> Du kannst überprüfen, ob eingegebene Daten korrekt sind, bevor du sie weiterverwendest.</p>
+  </li>
+</ul>
+
+<p><strong>Zusammenfassung:</strong></p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">if-else</code>-Abfragen ermöglichen es deinem Programm, Entscheidungen zu treffen.</p>
+
+    <ul>
+      <li>
+        <p>Sie bestehen aus einer Bedingung und zwei Codeblöcken: einem für den Fall, dass die Bedingung wahr ist, und einem für den Fall, dass sie falsch ist.</p>
+      </li>
+      <li>
+        <p>Sie können aneinandergereiht werden, um mehr verschiedene Optionen abzufragen.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Scanner</code> wird verwendet, um Benutzereingaben zu lesen.</p>
+  </li>
+</ul>
 
     </div>
   </body>

@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ProgrammierAG | Methoden</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    
+
+
+<div class="sidebar">
+    
+    <a id="back-button" href="/index.html">⬅ Zurück</a>
+    <img src="/assets/images/doc-logos/java.png">
+        
+
+            <!-- display group -->
+            
+                <a href="/java/einleitung.html" class="nav-link">
+                    Einleitung
+                </a>
+                
+            
+
+        
+
+            <!-- display group -->
+            
+                <a href="/java/programmierumgebung.html" class="nav-link">
+                    Programmierumgebung
+                </a>
+                
+            
+
+        
+
+            <!-- display group -->
+            
+                <h2 class="group-title">Java-Grundlagen</h2>
+                
+                    <a href="/java/$java-grundlagen/eine-java-datei.html" class="nav-link">
+                        Eine Java Datei
+                    </a>
+                    
+                
+                    <a href="/java/$java-grundlagen/variablen.html" class="nav-link">
+                        Variablen
+                    </a>
+                    
+                
+                    <a href="/java/$java-grundlagen/if-else.html" class="nav-link">
+                        if-else
+                    </a>
+                    
+                
+                    <a href="/java/$java-grundlagen/methoden.html" class="nav-link">
+                        Methoden
+                    </a>
+                    
+                
+                    <a href="/java/$java-grundlagen/schleifen.html" class="nav-link">
+                        Schleifen
+                    </a>
+                    
+                        <div class="subpages">
+                            
+                                <a href="/java/$java-grundlagen/schleifen/while-schleife.html" class="nav-link subpage">
+                                    while-Schleife
+                                </a>
+                            
+                                <a href="/java/$java-grundlagen/schleifen/for-schleife.html" class="nav-link subpage">
+                                    for-Schleife
+                                </a>
+                            
+                        </div>
+                    
+                
+                    <a href="/java/$java-grundlagen/erstes-spiel.html" class="nav-link">
+                        Dein erstes kleines Spiel
+                    </a>
+                    
+                        <div class="subpages">
+                            
+                                <a href="/java/$java-grundlagen/erstes-spiel/zufallsgenerator.html" class="nav-link subpage">
+                                    Zufallsgenerator
+                                </a>
+                            
+                        </div>
+                    
+                
+            
+            <!-- display ungrouped page -->
+            
+
+        
+
+            <!-- display group -->
+            
+                <h2 class="group-title">Erweiterte Funktionen von Java</h2>
+                
+                    <a href="/java/$erweiterte-funktionen/klassen.html" class="nav-link">
+                        Klassen
+                    </a>
+                    
+                
+            
+            <!-- display ungrouped page -->
+            
+
+        
+
+            <!-- display group -->
+            
+                <h2 class="group-title">Einfaches Spiel mit Grafik</h2>
+                
+                    <a href="/java/$einfaches-spiel/j-frame-einfuehrung.html" class="nav-link">
+                        Einführung in J-Frame
+                    </a>
+                    
+                
+                    <a href="/java/$einfaches-spiel/pong-spiel.html" class="nav-link">
+                        Einfaches Pong Spiel mit J-Frame
+                    </a>
+                    
+                
+            
+            <!-- display ungrouped page -->
+            
+
+        
+    
+</div>
+
+<!-- original sidebar code:
+
+<div class="sidebar">
+    <h2 class="group-title">Gruppe 1</h2>
+    <a href="#" class="nav-link active"><span class="icon">🏠</span> Seite 1</a>
+    <a href="#" class="nav-link"><span class="icon">📄</span> Seite 2</a>
+    <div class="subpages">
+        <a href="#" class="nav-link subpage"><span class="icon">📑</span> Unterseite 2.1</a>
+        <a href="#" class="nav-link subpage"><span class="icon">📑</span> Unterseite 2.2</a>
+    </div>
+
+    <h2 class="group-title">Gruppe 2</h2>
+    <a href="#" class="nav-link"><span class="icon">📄</span> Seite 3</a>
+    <div class="subpages">
+        <a href="#" class="nav-link subpage"><span class="icon">📑</span> Unterseite 3.1</a>
+        <a href="#" class="nav-link subpage"><span class="icon">📑</span> Unterseite 3.2</a>
+    </div>
+</div>
+
+-->
+
+    <div class="article-content">
+      <h1>Methoden</h1>
+      <h2 id="was-ist-eine-methode">Was ist eine Methode?</h2>
+
+<p>Eine Methode ist wie ein kleiner Helfer in deinem Programm. Sie erledigt eine bestimmte Aufgabe und hilft dir dabei, deinen Code übersichtlich zu halten. Wenn du eine Methode erstellst, kannst du sie immer wieder verwenden, ohne denselben Code mehrfach schreiben zu müssen.</p>
+
+<h2 id="wie-erstellt-man-eine-methode">Wie erstellt man eine Methode?</h2>
+<ol>
+  <li>
+    <p>Beim Erstellen einer Methode schreibst du 
+<code class="language-plaintext highlighter-rouge">public static</code> davor. Was genau das bedeutet, wird später im Kurs genauer erklärt. Kurz gesagt: 
+<code class="language-plaintext highlighter-rouge">public</code> sorgt dafür, dass die Methode von überall im Programm aufgerufen werden kann, und 
+<code class="language-plaintext highlighter-rouge">static</code> bedeutet, dass sie ohne besondere Bedingungen genutzt werden kann.</p>
+  </li>
+  <li>
+    <p>Nun legst du die Art der Rückgabe fest. Eine Methode kann beispielsweise ein int an den Hauptcode zurückgeben. Wenn du nichts zurückgeben willst, kannst du dort 
+<code class="language-plaintext highlighter-rouge">void</code> (Englisch für Leere) hinschreiben.</p>
+  </li>
+  <li>
+    <p>Danach kommt der Name der Methode, der beschreibt, was die Methode tut.</p>
+  </li>
+  <li>
+    <p>In die runden Klammern können später Parameter für die Funktion geschrieben werden</p>
+  </li>
+  <li>
+    <p>In die geschweiften Klammern wird der Code geschrieben, der durch die Methode ausgeführt wird.</p>
+  </li>
+</ol>
+
+<h2 id="beispiel">Beispiel:</h2>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Beispiel</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">begruessung</span><span class="o">();</span>  <span class="c1">// Hier rufen wir die Methode auf</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">begruessung</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hallo, willkommen!"</span><span class="o">);</span>  <span class="c1">// Die Aufgabe der Methode</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>In diesem Beispiel heißt die Methode <code class="language-plaintext highlighter-rouge">begruessung()</code>. Wenn das Programm ausgeführt wird, zeigt es „Hallo, willkommen!“ an, weil wir die Methode aufgerufen haben, in der ein <code class="language-plaintext highlighter-rouge">println</code>-Befehl ausgeführt wird.</p>
+
+<h2 id="warum-sind-methoden-nützlich">Warum sind Methoden nützlich?</h2>
+<ul>
+  <li>
+    <p><strong>Wiederverwendbarkeit:</strong> Wenn du eine Methode erstellt hast, kannst du sie so oft aufrufen, wie du willst, ohne den Code zu wiederholen.</p>
+  </li>
+  <li>
+    <p><strong>Ordnung und Übersicht:</strong> Methoden helfen dir, dein Programm aufzuräumen, sodass du den Überblick behältst, besonders wenn das Programm länger wird.</p>
+  </li>
+  <li>
+    <p><strong>Flexibilität:</strong> Du kannst Methoden auch mit verschiedenen Eingaben (Parametern) verwenden, sodass sie flexibler auf verschiedene Situationen reagieren können.</p>
+  </li>
+</ul>
+
+    </div>
+  </body>
+</html>
