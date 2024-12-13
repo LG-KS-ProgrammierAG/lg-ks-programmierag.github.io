@@ -153,7 +153,7 @@ button:hover {
                 );
                 background-size: 400%;
                 z-index:-1;
-                animation: shadow 20s linear infinite;
+                animation: rainbow-gradient 20s linear infinite;
             }
             
             &:after {
@@ -165,7 +165,7 @@ button:hover {
                 opacity:0.9;
             }
             
-            @keyframes shadow {
+            @keyframes rainbow-gradient {
                 0% {
                     background-position: 0 0;
                 }
