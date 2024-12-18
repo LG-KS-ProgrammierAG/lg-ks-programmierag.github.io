@@ -1,5 +1,5 @@
 ---
-title: while-Schleife
+title: While-Schleife
 ---
 
 Was ist eine while-Schleife?
