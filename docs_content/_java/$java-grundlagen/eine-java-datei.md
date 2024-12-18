@@ -22,3 +22,6 @@ Zwischen diesen geschweiften Klammern können wir nun unser Java-Programm schrei
 
 Die zweite Zeile teilt dem Computer mit, dass das, was in den nächsten geschweiften Klammern steht ausgeführt werden soll, sobald das Programm gestartet wird.
 
+{: .widget .info }
+Geschweifte Klammern setzt man auf dem Mac mit
+`alt+8` für *{* und `alt+9` für *}*
