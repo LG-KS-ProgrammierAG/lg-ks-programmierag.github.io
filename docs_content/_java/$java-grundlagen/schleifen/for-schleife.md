@@ -1,5 +1,5 @@
 ---
-title: for-schleife
+title: For-schleife
 ---
 
 Was ist eine for-Schleife?
