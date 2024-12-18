@@ -25,3 +25,6 @@ Die zweite Zeile teilt dem Computer mit, dass das, was in den nächsten geschwei
 {: .widget .info }
 Geschweifte Klammern setzt man auf dem Mac mit
 `alt+8` für *{* und `alt+9` für *}*
+
+> [!NOTE]
+> Geschweifte Klammern setzt man auf dem Mac mit `alt+8` für *{* und `alt+9` für *}*
