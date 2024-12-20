@@ -66,11 +66,11 @@
                         <div class="subpages">
                             
                                 <a href="/java/$java-grundlagen/schleifen/while-schleife.html" class="nav-link subpage">
-                                    while-Schleife
+                                    While-Schleife
                                 </a>
                             
                                 <a href="/java/$java-grundlagen/schleifen/for-schleife.html" class="nav-link subpage">
-                                    for-Schleife
+                                    For-Schleife
                                 </a>
                             
                         </div>
@@ -206,6 +206,72 @@
   </li>
   <li>
     <p><strong>Flexibilität:</strong> Du kannst Methoden auch mit verschiedenen Eingaben (Parametern) verwenden, sodass sie flexibler auf verschiedene Situationen reagieren können.</p>
+  </li>
+</ul>
+
+<h2 id="ein-beispiel-mit-einem-parameter">Ein Beispiel mit einem Parameter:</h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Beispiel</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Scanner</span> <span class="n">scanner</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
+        
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Wie heißt du? "</span><span class="o">);</span>
+        <span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">nextLine</span><span class="o">();</span>
+        
+        <span class="n">begruessung</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>  <span class="c1">// Hier rufen wir die Methode auf und geben den Namen weiter</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">begruessung</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hallo, "</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">", willkommen!"</span><span class="o">);</span>  <span class="c1">// Der Name wird verwendet</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>In diesem Beispiel haben wir die Methode <code class="language-plaintext highlighter-rouge">begruessung()</code> etwas erweitert. Sie nimmt jetzt einen Parameter – das ist eine Eingabe, die wir der Methode geben. Hier ist es der Name, den du eingibst. Die Methode begrüßt dich dann persönlich mit deinem Namen.</li>
+</ul>
+
+<h2 id="ein-beispiel-für-eine-methode-mit-rückgabewert">Ein Beispiel für eine Methode mit Rückgabewert:</h2>
+
+<ul>
+  <li>Methoden können auch Werte zurückgeben. Stell dir vor, du möchtest eine Methode haben, die zwei Zahlen addiert und dir das Ergebnis zurückgibt. Dafür braucht die Methode einen Rückgabewert. Du musst angeben, welchen Typ von Wert die Methode zurückgibt, zum Beispiel <code class="language-plaintext highlighter-rouge">int</code> für eine ganze Zahl. Wenn die Methode etwas zurückgibt, verwendest du das Schlüsselwort <code class="language-plaintext highlighter-rouge">return</code>, um den Wert zurückzugeben.</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Beispiel</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span> <span class="n">summe</span> <span class="o">=</span> <span class="n">addiere</span><span class="o">(</span><span class="mi">5</span><span class="o">,</span> <span class="mi">3</span><span class="o">);</span>  <span class="c1">// Wir rufen die Methode auf und speichern das Ergebnis in der Variable summe</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Die Summe ist: "</span> <span class="o">+</span> <span class="n">summe</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">addiere</span><span class="o">(</span><span class="kt">int</span> <span class="n">zahl1</span><span class="o">,</span> <span class="kt">int</span> <span class="n">zahl2</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">zahl1</span> <span class="o">+</span> <span class="n">zahl2</span><span class="o">;</span>  <span class="c1">// Die Methode gibt das Ergebnis der Addition zurück</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>In diesem Beispiel heißt die Methode <code class="language-plaintext highlighter-rouge">addiere()</code>, und sie nimmt zwei Zahlen als Eingabe <strong>(Parameter)</strong>. Sie addiert diese und gibt das Ergebnis zurück. Der Rückgabewert der Methode ist vom Typ <code class="language-plaintext highlighter-rouge">int</code>, also eine ganze Zahl. Wenn wir die Methode aufrufen, speichern wir das Ergebnis in der Variable <code class="language-plaintext highlighter-rouge">summe</code> und geben es dann aus.</li>
+</ul>
+
+<h2 id="zusammenfassung">Zusammenfassung:</h2>
+
+<ul>
+  <li>
+    <p>Eine <strong>Methode</strong> ist ein wichtiger Bestandteil deines Programms, der dir hilft, Aufgaben effizient zu wiederholen, ohne denselben Code mehrfach schreiben zu müssen.</p>
+  </li>
+  <li>
+    <p>Um eine Methode zu erstellen, schreibst du <code class="language-plaintext highlighter-rouge">public static</code> davor, gefolgt von einem <strong>Methodennamen</strong>, der beschreibt, was die Methode tut. Später wirst du lernen, warum <code class="language-plaintext highlighter-rouge">public</code> und <code class="language-plaintext highlighter-rouge">static</code> wichtig sind.</p>
+  </li>
+  <li>
+    <p>Methoden können <strong>Parameter</strong> annehmen, also Eingaben, mit denen sie arbeiten, was sie flexibler macht.</p>
+  </li>
+  <li>
+    <p>Methoden können auch einen <strong>Rückgabewert</strong> haben. Das bedeutet, dass sie nach der Ausführung einen Wert an den Ort zurückgeben, wo sie aufgerufen wurden. Dies ist nützlich, um Berechnungen oder andere Ergebnisse weiterzuverwenden.</p>
+  </li>
+  <li>
+    <p>Durch die Verwendung von Methoden wird dein Programm <strong>strukturierter</strong>, <strong>übersichtlicher</strong> und <strong>wiederverwendbarer</strong>.</p>
   </li>
 </ul>
 

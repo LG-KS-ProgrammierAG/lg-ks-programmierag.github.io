@@ -12,9 +12,9 @@ collections:
 
 defaults:
   - scope:
-        type: "scratch"
-      values:
-        layout: "article"
+      type: "scratch"
+    values:
+      layout: "article"
   - scope:
       type: "java"
     values:
