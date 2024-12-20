@@ -19,3 +19,7 @@ Wenn du auf einen anderen Computer Scratch benutzen willst, kannst du es einfach
 ![Benutzeroberfläche von Scratch](einleitung/scratch_screen_blank.png)
 
 Hier siehtst du, die **Benutzeroberfläche von Scratch**. Der große Bereich in der Mitte ist der **Codebereich**, in welchem du dein Spiel programmierst. Links davon findest du alle verfügbaren Codeblöcke. Auf der Rechten Seite siehst du oben das **Spielfenster**, in welchem später alles, was du programmierst geschehen wird. Darunter findest du noch die **Figur-/Hintergrund-Übersicht**. Hier kannst du neue Figuren und Hintergründe hinzufügen, aber auch bestehende modifizieren und löschen.
+
+Wenn du irgendwann von neu starten willst, erstellst du oben links ein neues Projekt, indem du unter `Datei` auf `Neu` drückst.
+
+![Neues Projekt erstellen](einleitung/scratch_create_new_project.png)
