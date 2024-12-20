@@ -120,10 +120,9 @@
     img {
         width: 100%;
         height: auto;
+        border-radius: 15px;
     }
 }
 
-#navbar_logo_scratch {
-    width: 80%;
-    align-self: center;
-}
+.navbar_logo { align-self: center; }
+#navbar_logo_scratch { width: 70%; }
