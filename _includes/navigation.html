@@ -4,7 +4,7 @@
 <div class="sidebar">
     {% if current_collection and site.data[nav_file] %}
     <a id="back-button" href="{{ site.baseurl }}/index.html">⬅ Zurück</a>
-    <img src="/assets/images/doc-logos/{{ current_collection }}.png">
+    <img src="/assets/images/doc-logos/{{ current_collection }}.png" id="navbar_logo_{{ page.collection }}">
         {% for item in site.data[nav_file] %}
 
             <!-- display group -->
