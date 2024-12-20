@@ -1,0 +1,52 @@
+{% assign current_url = page.url %}
+{% assign nav_items = site.data.nav_java %}
+
+<div class="footer-nav">
+  <!-- Variablen initialisieren -->
+  {% assign previous = nil %}
+  {% assign next = nil %}
+  
+  <!-- Durchlaufe die Navigation -->
+  {% for item in nav_items %}
+    {% if item.url == current_url %}
+      {% assign next = nav_items[forloop.index] %}
+      {% break %}
+    {% elsif item.pages %}
+      {% for subitem in item.pages %}
+        {% if subitem.url == current_url %}
+          {% assign next = item.pages[forloop.index] %}
+          {% assign previous = item.pages[forloop.index0] %}
+          {% break %}
+        {% endif %}
+        {% if subitem.subpages %}
+          {% for subsubitem in subitem.subpages %}
+            {% if subsubitem.url == current_url %}
+              {% assign next = subitem.subpages[forloop.index] %}
+              {% assign previous = subitem.subpages[forloop.index0] %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {% unless item.url == current_url %}
+      {% assign previous = item %}
+    {% endunless %}
+  {% endfor %}
+
+  <div class="nav-buttons">
+    <!-- Vorherige Seite -->
+    {% if previous %}
+      <a class="nav-button prev" href="{{ previous.url | relative_url }}">
+        ← Zurück
+      </a>
+    {% endif %}
+
+    <!-- Nächste Seite -->
+    {% if next %}
+      <a class="nav-button next" href="{{ next.url | relative_url }}">
+        Weiter → {{ next.title }}
+      </a>
+    {% endif %}
+  </div>
+</div>

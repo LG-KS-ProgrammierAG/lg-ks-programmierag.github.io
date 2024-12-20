@@ -1,0 +1,52 @@
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+  
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 2px solid #007acc;
+    border-radius: 25px;
+    background-color: white;
+    color: #007acc;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-button:hover {
+    background-color: #007acc;
+    color: white;
+  }
+  
+  .nav-button.prev {
+    margin-right: auto;
+  }
+  
+  .nav-button.next {
+    margin-left: auto;
+  }
+  
+  /* Für eine bessere Ansicht im Dark Mode */
+  @media (prefers-color-scheme: dark) {
+    .nav-button {
+      border-color: #4a90e2;
+      color: #4a90e2;
+    }
+  
+    .nav-button:hover {
+      background-color: #4a90e2;
+      color: white;
+    }
+  }
+}
