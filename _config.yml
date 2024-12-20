@@ -1,6 +1,8 @@
 collections_dir: docs_content
 
 collections:
+  scratch:
+    output: true
   java:
     output: true
   c++:
@@ -9,6 +11,10 @@ collections:
 #   output: true
 
 defaults:
+  - scope:
+        type: "scratch"
+      values:
+        layout: "article"
   - scope:
       type: "java"
     values:

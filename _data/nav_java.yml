@@ -17,9 +17,9 @@
     - title: "Schleifen"
       url: "$java-grundlagen/schleifen.html"
       subpages:
-        - title: "while-Schleife"
+        - title: "While-Schleife"
           url: "$java-grundlagen/schleifen/while-schleife.html"
-        - title: "for-Schleife"
+        - title: "For-Schleife"
           url: "$java-grundlagen/schleifen/for-schleife.html"
     - title: "Dein erstes kleines Spiel"
       url: "$java-grundlagen/erstes-spiel.html"
