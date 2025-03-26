@@ -20,10 +20,7 @@ Mit Godot kannst du z. B.:
 - ein Rätsel-Abenteuer entwickeln 🔍  
 
 ## Installation
-
-1. **Godot herunterladen** von [godotengine.org](https://godotengine.org/)
-2. **Ein erstes Projekt starten**  
-3. **GDScript lernen** und dein Spiel programmieren  
+- **Godot herunterladen** von [godotengine.org](https://godotengine.org/)
 
 ## Nächste Schritte
 
