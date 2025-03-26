@@ -34,3 +34,6 @@ Auf der Website von [GD-Quest](https://gdquest.github.io/learn-gdscript/) kannst
 ![Preview von GD-Quest - Godot lernen](./einleitung/previewGDQuest.png)
 
 Du kannst dich auf den nächsten Seiten auch erst einmal mit der Benutzeroberfläche von **GODOT** vertraut machen. Sobald du beides getan hast, kannst du deine ersten Projekte erstellen.
+
+{: .widget .info }
+Wenn du irgendetwas bestimmtes zu **Godot** wissen willst, dann schau in die offizielle Dokumentation. Dort findest du alles wichtige zu allen möglchen Befehlen. https://docs.godotengine.org/de/4.x/
