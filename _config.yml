@@ -3,6 +3,8 @@ collections_dir: docs_content
 collections:
   scratch:
     output: true
+  godot:
+    output: true
   java:
     output: true
   c++:
@@ -13,6 +15,10 @@ collections:
 defaults:
   - scope:
       type: "scratch"
+    values:
+      layout: "article"
+  - scope:
+      type: "godot"
     values:
       layout: "article"
   - scope:
